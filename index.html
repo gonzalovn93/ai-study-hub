@@ -19,7 +19,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 .pb{width:70px;height:3px;background:var(--bd);border-radius:2px;overflow:hidden}
 .pf{height:100%;background:var(--ac);border-radius:2px;transition:width .5s}
 .app{padding-top:56px;min-height:100vh}
-.vw{display:none}.vw.on{display:block}
+.vw{display:none}.vw.on{display:block}#lv.on{display:flex}#cv.on{display:flex}
 #mv{padding:30px 26px;max-width:1060px;margin:0 auto}
 .mh h1{font-family:var(--dp);font-size:36px;line-height:1.15;margin-bottom:9px}
 .mh h1 span{color:var(--ac)}
@@ -46,7 +46,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 .tree .lbl{font-family:var(--mn);font-size:10px;color:var(--mt);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}
 .tree .ln{font-family:var(--mn);font-size:12px;line-height:2.1;cursor:pointer}
 .tree .ln:hover{color:var(--ac)}
-#lv{display:flex;height:calc(100vh - 56px)}
+#lv{height:calc(100vh - 56px)}
 .sb{width:250px;flex-shrink:0;background:var(--s1);border-right:1px solid var(--bd);overflow-y:auto;padding:8px 0}
 .ss{padding:5px 14px 2px;font-family:var(--mn);font-size:9px;color:var(--mt);text-transform:uppercase;letter-spacing:.12em;margin-top:7px}
 .si{padding:7px 16px;font-size:11.5px;cursor:pointer;transition:background .1s;color:var(--dm);display:flex;align-items:center;gap:5px;border-left:2px solid transparent;line-height:1.3}
@@ -112,7 +112,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 .btn.s{background:transparent;color:var(--dm)}
 .btn.s:hover{border-color:var(--ac);color:var(--ac)}
 .btn:disabled{opacity:.4;cursor:not-allowed}
-#cv{display:flex;flex-direction:column;height:calc(100vh - 56px);max-width:720px;margin:0 auto;padding:0 20px}
+#cv{height:calc(100vh - 56px)}
+.csb{width:262px;flex-shrink:0;background:var(--s1);border-right:1px solid var(--bd);overflow-y:auto;padding:16px 14px;display:flex;flex-direction:column;gap:7px}
+.csb h3{font-size:14px;font-weight:600}
+.csb .csub{font-size:11px;color:var(--dm);line-height:1.5;margin-bottom:4px}
+.csb .cslbl{font-family:var(--mn);font-size:9px;color:var(--mt);text-transform:uppercase;letter-spacing:.12em;margin:10px 0 3px}
+.csb button{text-align:left;padding:9px 11px;border-radius:7px;font-size:11.5px;border:1px solid var(--bd);color:var(--dm);cursor:pointer;background:transparent;font-family:var(--ss);transition:all .15s;line-height:1.35}
+.csb button:hover{border-color:var(--ac);color:var(--ac);background:rgba(108,99,255,.06)}
+.cmain{flex:1;display:flex;flex-direction:column;min-width:0;max-width:840px;width:100%;margin:0 auto;padding:0 22px}
 .ch2{padding:18px 0 12px;border-bottom:1px solid var(--bd);margin-bottom:10px}
 .ch2 h2{font-size:17px;margin-bottom:3px}
 .ch2 p{font-size:11px;color:var(--dm)}
@@ -137,7 +144,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 .dot:nth-child(2){animation-delay:.15s}.dot:nth-child(3){animation-delay:.3s}
 @keyframes bc{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--bd);border-radius:2px}
-@media(max-width:700px){#lv{flex-direction:column}.sb{width:100%;max-height:160px;border-right:none;border-bottom:1px solid var(--bd)}.lc{padding:20px}.hg{grid-template-columns:1fr 1fr}.pr{grid-template-columns:1fr}}
+@media(max-width:700px){#lv{flex-direction:column}#cv.on{flex-direction:column}.csb{width:100%;max-height:168px;border-right:none;border-bottom:1px solid var(--bd)}.cmain{max-width:none;padding:0 14px}.sb{width:100%;max-height:160px;border-right:none;border-bottom:1px solid var(--bd)}.lc{padding:20px}.hg{grid-template-columns:1fr 1fr}.pr{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -302,28 +309,35 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 
 <!-- CHAT -->
 <div id="cv" class="vw">
-  <div class="ch2">
-    <h2>Ask Claude — AI Tutor</h2>
-    <p>Seeded with your full Haas notes (Business AI Foundations + Pepe's 4 classes) + your projects + 2026 context. Ask anything.</p>
+  <div class="csb">
+    <h3>💬 Ask Claude</h3>
+    <div class="csub">AI tutor seeded with your Haas notes (Business AI Foundations + Pepe's 4 classes), your projects, and 2026 context.</div>
+    <div class="cslbl">// starter questions</div>
+    <button onclick="ask('Explain the attention mechanism with a clear visual analogy')">⚡ Attention mechanism</button>
+    <button onclick="ask('What is RLHF and why does it matter? How does temperature fit in?')">🌡 RLHF + temperature</button>
+    <button onclick="ask('How does Skeleton and Spark apply to the content-marketing-agent?')">🦴 Skeleton & Spark</button>
+    <button onclick="ask('What are evals and why do PMs need to care about them specifically?')">🧪 Evals for PMs</button>
+    <button onclick="ask('Walk me through the AI data flywheel — when does it work and when does it fail?')">🔄 Data flywheel</button>
+    <button onclick="ask('What happened with DeepSeek in early 2025 and why did it matter strategically?')">📉 DeepSeek moment</button>
+    <button onclick="ask('Explain RAG vs fine-tuning tradeoffs with a clear example')">📚 RAG vs fine-tuning</button>
+    <button onclick="ask('Why did the asthma/pneumonia model fail in Class 13?')">🫁 Asthma/pneumonia case</button>
   </div>
-  <div class="ms" id="ms">
-    <div class="msg">
-      <div class="av">🤖</div>
-      <div class="bub">Hey Gonzalo. I'm seeded with your full Haas AI curriculum — Business AI Foundations (17 classes), Pepe's 4-class series (Software → ML → LLMs → Multi-Agent), plus your project context (ai-operating-system, WhatIfStudios, Kairos, content-marketing-agent, berkeley-optometry-voice).<br><br>Try:<br>• "Explain attention mechanism visually"<br>• "Why did the asthma/pneumonia model fail in Class 13?"<br>• "How does the ai-operating-system relate to what we learned about agents?"<br>• "Walk me through RAG vs fine-tuning tradeoffs"<br><br>What do you want to nail first?</div>
+  <div class="cmain">
+    <div class="ch2">
+      <h2>Ask Claude — AI Tutor</h2>
+      <p>Pick a starter on the left or type your own. The conversation scrolls here; the input box stays put.</p>
     </div>
-  </div>
-  <div class="ci">
-    <div class="ir">
-      <textarea class="ti" id="ti" placeholder="Ask about any AI concept..." onkeydown="ck(event)"></textarea>
-      <button class="ts" onclick="snd()">↑</button>
+    <div class="ms" id="ms">
+      <div class="msg">
+        <div class="av">🤖</div>
+        <div class="bub">Hey Gonzalo. I'm seeded with your full Haas AI curriculum — Business AI Foundations (17 classes), Pepe's 4-class series (Software → ML → LLMs → Multi-Agent), plus your project context (ai-operating-system, WhatIfStudios, Kairos, content-marketing-agent, berkeley-optometry-voice).<br><br>Try:<br>• "Explain attention mechanism visually"<br>• "Why did the asthma/pneumonia model fail in Class 13?"<br>• "How does the ai-operating-system relate to what we learned about agents?"<br>• "Walk me through RAG vs fine-tuning tradeoffs"<br><br>What do you want to nail first?</div>
+      </div>
     </div>
-    <div class="sg2">
-      <button onclick="ask('Explain the attention mechanism with a clear visual analogy')">Attention mechanism</button>
-      <button onclick="ask('What is RLHF and why does it matter? How does temperature fit in?')">RLHF + temperature</button>
-      <button onclick="ask('How does Skeleton and Spark apply to the content-marketing-agent?')">Skeleton & Spark</button>
-      <button onclick="ask('What are evals and why do PMs need to care about them specifically?')">Evals for PMs</button>
-      <button onclick="ask('Walk me through the AI data flywheel — when does it work and when does it fail?')">Data flywheel</button>
-      <button onclick="ask('What happened with DeepSeek in early 2025 and why did it matter strategically?')">DeepSeek moment</button>
+    <div class="ci">
+      <div class="ir">
+        <textarea class="ti" id="ti" placeholder="Ask about any AI concept..." onkeydown="ck(event)"></textarea>
+        <button class="ts" onclick="snd()">↑</button>
+      </div>
     </div>
   </div>
 </div>
