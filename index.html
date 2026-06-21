@@ -1393,6 +1393,7 @@ Teaching style — always structure responses as:
 
 Be technically precise. Direct. Zero fluff. Correct misconceptions immediately.`;
 
+const API_URL='https://ai-study-hub-weld.vercel.app/api/chat';
 const hist=[];
 async function snd(){
   const inp=document.getElementById('ti');
@@ -1401,13 +1402,13 @@ async function snd(){
   const tid=addTyp();
   hist.push({role:'user',content:txt});
   try{
-    const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:SYS,messages:hist})});
+    const r=await fetch(API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:hist})});
     const d=await r.json();
-    const reply=d.content?.[0]?.text||'Error getting response.';
-    rmTyp(tid);addM('ai',reply);hist.push({role:'assistant',content:reply});
+    const reply=d.text||(d.error?`⚠️ ${d.error}`:'Error getting response.');
+    rmTyp(tid);addM('ai',reply);if(d.text)hist.push({role:'assistant',content:reply});
   }catch(e){
     rmTyp(tid);
-    addM('ai',`⚠️ The chat API isn't accessible in this static site. For deep-dive questions, open Claude directly and paste this context:\n\n"I'm Gonzalo, Berkeley Haas MBA, studying AI. I've taken Business AI Foundations (17 classes) and Pepe's 4-class series (Software/ML/LLMs/Multi-Agent). My projects: ai-operating-system, WhatIfStudios, Kairos, content-marketing-agent. My question: [your question]"\n\nAll 38 lessons in the Learn tab work fully offline.`);
+    addM('ai',`⚠️ Couldn't reach the tutor service just now. Check your connection and try again — the Learn and Quiz tabs work fully offline in the meantime.`);
   }
 }
 function addM(r,t){
