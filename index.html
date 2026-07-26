@@ -165,7 +165,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 <div id="mv" class="vw on">
 <div class="mh">
   <h1>Your AI<br><span>Study Syllabus</span></h1>
-  <p>13 scheduled modules · 70 study days · 10 weeks (Jul 28 – Oct 5, 2026) · 73 lessons. Ordered exactly like your Notion daily study tracker: code first, then how AI works, then production. Click any module to open it in Learn.</p>
+  <p>13 modules · 70 study days · 10 weeks (Jul 28 – Oct 5, 2026) · 73 lessons. Ordered exactly like your Notion daily study tracker: code first, then how AI works, then production. Click any module to open it in Learn.</p>
 </div>
 
 <div class="ps">
@@ -173,25 +173,25 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
   <div class="pr">
     <div class="mc" onclick="jmp('py','vars')"><div class="mn2">MODULE 01 · WEEK 1</div><h4>🐍 Python Basics</h4><p>What a program is, control flow, functions, HTTP/APIs/JSON, files and the terminal, error handling. Week 1 build: a CLI tool that calls the GitHub API.</p><div class="mctg"><span class="tg2">Code</span><span class="tg2">7 days · Jul 28 – Aug 3</span></div></div>
     <div class="mc" onclick="jmp('py','lists')"><div class="mn2">MODULE 02 · WEEK 2</div><h4>🗂 Data Structures</h4><p>Lists, dicts, stacks, queues, classes, recursion, Big O. The data grammar of every AI system. Week 2 build: a conversation history manager.</p><div class="mctg"><span class="tg2">Code</span><span class="tg2">7 days · Aug 4 – 10</span></div></div>
-    <div class="mc" onclick="jmp('db','intro')"><div class="mn2">MODULE 03 · WEEK 3</div><h4>🗄 Databases &amp; AI Memory</h4><p>SQL, SQLite, vector databases, NoSQL, schema design, long-term memory patterns. Week 3 build: a SQLite DB for highlight events.</p><div class="mctg"><span class="tg2">Code</span><span class="tg2">7 days · Aug 11 – 17</span></div></div>
+    <div class="mc" onclick="jmp('db','intro')"><div class="mn2">MODULE 03 · WEEK 3</div><h4>🗄 Databases &amp; AI Memory</h4><p>SQL, SQLite, vector databases, NoSQL, schema design, long-term memory patterns. Week 3 build: a SQLite DB for highlight events. Day 7 doubles as the AI Orientation bridge into M04.</p><div class="mctg"><span class="tg2">Code</span><span class="tg2">7 days · Aug 11 – 17</span></div></div>
   </div>
 </div>
 
 <div class="ps">
   <div class="pl">🤖 Weeks 4–6 — How AI Actually Works</div>
   <div class="pr">
-    <div class="mc" onclick="jmp('ml','supervised')"><div class="mn2">MODULE 04 · WEEK 4</div><h4>🤖 Machine Learning</h4><p>Supervised, unsupervised, reinforcement. Training loop, train/val/test, overfitting, precision vs recall, feature engineering, label leakage. Week 4: design the ML pipeline on paper.</p><div class="mctg"><span class="tp">ML</span><span class="tg2">7 days · Aug 18 – 24</span></div></div>
-    <div class="mc" onclick="jmp('dl','neural')"><div class="mn2">MODULE 05 · WEEK 5</div><h4>🧠 Neural Networks &amp; Deep Learning</h4><p>What a neuron does, why layers matter, backprop and gradient descent, CNNs for images, transfer learning. Week 5 build: run a pre-trained image classifier.</p><div class="mctg"><span class="tp">Deep Learning</span><span class="tg2">4 days · Aug 25 – 28</span></div></div>
-    <div class="mc" onclick="jmp('tr','attention')"><div class="mn2">MODULE 06 · WEEK 5</div><h4>⚡ Transformers &amp; Attention</h4><p>"Attention Is All You Need" (2017). Q-K-V attention, embeddings, tokenization, scaling laws, emergence — the leap from neural nets to LLMs.</p><div class="mctg"><span class="ty">Core</span><span class="tg2">2 days · Aug 29 – 30</span></div></div>
+    <div class="mc" onclick="jmp('ml','supervised')"><div class="mn2">MODULE 04 · WEEK 4</div><h4>🤖 Machine Learning</h4><p>Day 1: tokens, parameters and embeddings. Then supervised, unsupervised, reinforcement. Training loop, train/val/test, overfitting, precision vs recall, feature engineering, label leakage. Week 4: design the ML pipeline on paper.</p><div class="mctg"><span class="tp">ML</span><span class="tg2">7 days · Aug 18 – 24</span></div></div>
+    <div class="mc" onclick="jmp('dl','neural')"><div class="mn2">MODULE 05 · WEEK 5</div><h4>🧠 Neural Networks</h4><p>What a neuron does, why layers matter, backprop and gradient descent, CNNs for images, transfer learning. Week 5 build: run a pre-trained image classifier.</p><div class="mctg"><span class="tp">Deep Learning</span><span class="tg2">4 days · Aug 25 – 28</span></div></div>
+    <div class="mc" onclick="jmp('tr','attention')"><div class="mn2">MODULE 06 · WEEK 5</div><h4>⚡ Transformers &amp; Attention</h4><p>Day 1 confirms token and embedding intuition, then "Attention Is All You Need" (2017): Q-K-V attention, scaling laws, emergence — the leap from neural nets to LLMs.</p><div class="mctg"><span class="ty">Core</span><span class="tg2">2 days · Aug 29 – 30</span></div></div>
     <div class="mc" onclick="jmp('llm','how')"><div class="mn2">MODULE 07 · WEEK 6</div><h4>💬 LLMs In Depth</h4><p>The Claude API from scratch. Autoregressive generation, pretraining → SFT → RLHF, the 5-part system prompt, few-shot &amp; chain-of-thought, RAG, hallucinations.</p><div class="mctg"><span class="ty">Core</span><span class="tg2">4 days · Sep 1 – 4</span></div></div>
-    <div class="mc" onclick="jmp('ev','intro')"><div class="mn2">MODULE 08 · WEEK 6</div><h4>🧪 Evals ★</h4><p>Testing AI like a software engineer. Exact match, LLM-as-judge, golden datasets, structured outputs and function calling. Week 6 build: classification + commentary pipeline.</p><div class="mctg"><span class="ty">Applied</span><span class="tg2">2 days · Sep 5 – 6</span></div></div>
+    <div class="mc" onclick="jmp('ev','intro')"><div class="mn2">MODULE 08 · WEEK 6</div><h4>🧪 Evals ★</h4><p>Testing AI like a software engineer. Exact match, LLM-as-judge, golden datasets, structured outputs and function calling. Week 6 build: classification + commentary pipeline.</p><div class="mctg"><span class="ty">Applied</span><span class="tg2">2 days + build · Sep 5 – 7</span></div></div>
   </div>
 </div>
 
 <div class="ps">
   <div class="pl">🕹 Week 7 — Agents</div>
   <div class="pr">
-    <div class="mc" onclick="jmp('ag','loop')"><div class="mn2">MODULE 09 · WEEK 7</div><h4>🕹 AI Agents</h4><p>ReAct loop, the agency split, tools and MCP, Skeleton &amp; Spark (95% code / 5% AI), frameworks, safety failure modes, Pass@K and trajectory testing. Week 7 build: a bare ReAct loop in Python.</p><div class="mctg"><span class="ty">Applied</span><span class="tg2">7 days · Sep 8 – 14</span></div></div>
+    <div class="mc" onclick="jmp('ag','loop')"><div class="mn2">MODULE 09 · WEEK 7</div><h4>🕹 AI Agents</h4><p>ReAct loop, the agency split, tools and MCP, Skeleton &amp; Spark (95% code / 5% AI), frameworks, safety failure modes, Pass@K and trajectory testing. Days 6–7 absorb multi-agent patterns: the 4 canonical patterns and the 1x/4x/15x cost curves. Week 7 build: a bare ReAct loop in Python.</p><div class="mctg"><span class="ty">Applied</span><span class="tg2">7 days · Sep 8 – 14</span></div></div>
   </div>
 </div>
 
@@ -200,18 +200,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
   <div class="pr">
     <div class="mc" onclick="jmp('sys','design')"><div class="mn2">MODULE 10 · WEEK 8</div><h4>☁ Systems &amp; Cloud</h4><p>Systems design, FastAPI, cloud deployment, async, structured logging and observability, AI FinOps. Week 8 build: deploy a FastAPI endpoint to the cloud.</p><div class="mctg"><span class="tr">Production</span><span class="tg2">7 days · Sep 15 – 21</span></div></div>
     <div class="mc" onclick="jmp('sec','owasp')"><div class="mn2">MODULE 11 · WEEK 9</div><h4>🔒 Security &amp; Ethics</h4><p>OWASP Top 10, prompt injection, auth and least privilege, GDPR/PII, AI bias, alignment and the 3 governance questions. Week 9: full security + ethics audit.</p><div class="mctg"><span class="tr">Safety</span><span class="tg2">7 days · Sep 22 – 28</span></div></div>
-    <div class="mc" onclick="jmp('ax','patterns')"><div class="mn2">MODULE 12 · WEEK 10</div><h4>🤖 Agent Experience (AX)</h4><p>The 6 AX design patterns, build vs buy vs API, hypothesis-first building. Your LinkedIn thesis, built out. Week 10 final: deploy the full AI pipeline.</p><div class="mctg"><span class="tr">Strategy</span><span class="tg2">3 days · Sep 29 – Oct 3</span></div></div>
-    <div class="mc" onclick="jmp('st','threec')"><div class="mn2">MODULE 13 · WEEK 10</div><h4>📊 AI Strategy &amp; Business</h4><p>The Three C Framework, tokenmaxxing and AI cost governance, AI &amp; firm growth research, measuring impact, the future of work.</p><div class="mctg"><span class="tr">Strategy</span><span class="tg2">2 days · Sep 30 – Oct 1</span></div></div>
+    <div class="mc" onclick="jmp('ax','patterns')"><div class="mn2">MODULE 12 · WEEK 10</div><h4>🤖 Agent Experience (AX)</h4><p>The 6 AX design patterns, build vs buy vs API, hypothesis-first building. Your LinkedIn thesis, built out. Week 10 final: deploy the full AI pipeline.</p><div class="mctg"><span class="tr">Strategy</span><span class="tg2">3 days + build · Sep 29 – Oct 3</span></div></div>
+    <div class="mc" onclick="jmp('st','threec')"><div class="mn2">MODULE 13 · WEEK 10</div><h4>📊 AI Strategy &amp; Business</h4><p>The Three C Framework, tokenmaxxing and AI cost governance, AI &amp; firm growth research, measuring impact, the future of work. Closes on the data flywheel and the strategic moat.</p><div class="mctg"><span class="tr">Strategy</span><span class="tg2">2 days + reflect · Sep 30 – Oct 5</span></div></div>
   </div>
 </div>
 
-<div class="ps">
-  <div class="pl">📚 Reference — not on the 10-week schedule</div>
-  <div class="pr">
-    <div class="mc" onclick="jmp('f','intro')"><div class="mn2">MODULE R1 · ANYTIME</div><h4>🌍 AI Foundations</h4><p>AI = Prediction + Optimization + Action. Tokens, parameters, embeddings, the three waves, the data pipeline and the AI data flywheel. Read this first if you want the map before the terrain.</p><div class="mctg"><span class="tp">Foundations</span><span class="tg2">5 lessons</span></div></div>
-    <div class="mc" onclick="jmp('ma','patterns')"><div class="mn2">MODULE R2 · ANYTIME</div><h4>🔗 Multi-Agent Systems</h4><p>The 4 canonical patterns, +90% gains over single agent, cost curves (1x/4x/15x), and when NOT to go multi-agent.</p><div class="mctg"><span class="tr">Advanced</span><span class="tg2">2 lessons</span></div></div>
-  </div>
-</div>
 </div>
 
 
@@ -239,23 +232,28 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
     <div class="si" data-k="db:nosql" onclick="ld('db','nosql')">NoSQL: when relational doesn't fit</div>
     <div class="si" data-k="db:design" onclick="ld('db','design')">Schema design &amp; normalization</div>
     <div class="si" data-k="db:memory" onclick="ld('db','memory')">AI long-term memory patterns</div>
+    <div class="ss">Bridge — AI Orientation before M04</div>
+    <div class="si" data-k="f:intro" onclick="ld('f','intro')">🌍 What is AI?</div>
+    <div class="si" data-k="f:waves" onclick="ld('f','waves')">Three Waves of AI</div>
+    <div class="si" data-k="f:data" onclick="ld('f','data')">The AI Data Pipeline</div>
     <div class="ss">M04 · Machine Learning</div>
+    <div class="si" data-k="f:tokens" onclick="ld('f','tokens')">Day 1 &middot; Tokens, Parameters &amp; Embeddings</div>
     <div class="si" data-k="ml:supervised" onclick="ld('ml','supervised')">Supervised Learning</div>
     <div class="si" data-k="ml:unsupervised" onclick="ld('ml','unsupervised')">Unsupervised Learning</div>
     <div class="si" data-k="ml:rl" onclick="ld('ml','rl')">Reinforcement Learning</div>
     <div class="si" data-k="ml:loop" onclick="ld('ml','loop')">The Training Loop</div>
     <div class="si" data-k="ml:pitfalls" onclick="ld('ml','pitfalls')">Overfitting, Leakage &amp; Pitfalls</div>
-    <div class="ss">M05 · Deep Learning</div>
+    <div class="ss">M05 · Neural Networks</div>
     <div class="si" data-k="dl:neural" onclick="ld('dl','neural')">Neural Networks</div>
     <div class="si" data-k="dl:backprop" onclick="ld('dl','backprop')">Backpropagation</div>
     <div class="si" data-k="dl:depth" onclick="ld('dl','depth')">Depth, Scale &amp; Emergence</div>
     <div class="si" data-k="dl:rules" onclick="ld('dl','rules')">Rules-Based vs Deep Learning</div>
-    <div class="ss">M06 · Transformers</div>
+    <div class="ss">M06 · Transformers &amp; Attention</div>
+    <div class="si" data-k="tr:tok" onclick="ld('tr','tok')">Day 1 &middot; Tokenization</div>
+    <div class="si" data-k="tr:embed" onclick="ld('tr','embed')">Day 1 &middot; Word Embeddings</div>
     <div class="si" data-k="tr:attention" onclick="ld('tr','attention')">⚡ Attention Mechanism</div>
-    <div class="si" data-k="tr:embed" onclick="ld('tr','embed')">Word Embeddings</div>
-    <div class="si" data-k="tr:tok" onclick="ld('tr','tok')">Tokenization</div>
     <div class="si" data-k="tr:scale" onclick="ld('tr','scale')">Scaling Laws &amp; Emergence</div>
-    <div class="ss">M07 · LLMs</div>
+    <div class="ss">M07 · LLMs In Depth</div>
     <div class="si" data-k="llm:how" onclick="ld('llm','how')">How LLMs Work</div>
     <div class="si" data-k="llm:train" onclick="ld('llm','train')">Pretraining → SFT → RLHF</div>
     <div class="si" data-k="llm:prompt" onclick="ld('llm','prompt')">Prompting vs Fine-Tuning</div>
@@ -267,12 +265,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
     <div class="si" data-k="ev:types" onclick="ld('ev','types')">Types of Evals</div>
     <div class="si" data-k="ev:judge" onclick="ld('ev','judge')">LLM-as-Judge</div>
     <div class="si" data-k="ev:agents" onclick="ld('ev','agents')">Evals for Agents</div>
-    <div class="ss">M09 · Agents</div>
+    <div class="ss">M09 · AI Agents</div>
     <div class="si" data-k="ag:loop" onclick="ld('ag','loop')">The ReAct Loop</div>
     <div class="si" data-k="ag:tools" onclick="ld('ag','tools')">Tools &amp; MCP</div>
     <div class="si" data-k="ag:skspark" onclick="ld('ag','skspark')">Skeleton &amp; Spark</div>
     <div class="si" data-k="ag:safety" onclick="ld('ag','safety')">Safety, Alignment &amp; Security</div>
     <div class="si" data-k="ag:land" onclick="ld('ag','land')">2026 Agent Landscape ★</div>
+    <div class="si" data-k="ma:patterns" onclick="ld('ma','patterns')">M09.6 — Multi-agent patterns</div>
+    <div class="si" data-k="ma:costs" onclick="ld('ma','costs')">M09 BUILD</div>
     <div class="ss">M10 · Systems &amp; Cloud</div>
     <div class="si" data-k="sys:design" onclick="ld('sys','design')">Systems design thinking</div>
     <div class="si" data-k="sys:api" onclick="ld('sys','api')">Building REST APIs with FastAPI</div>
@@ -290,22 +290,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
     <div class="si" data-k="ax:patterns" onclick="ld('ax','patterns')">🤖 The 6 AX Design Patterns</div>
     <div class="si" data-k="ax:buildvbuy" onclick="ld('ax','buildvbuy')">Build vs Buy vs API</div>
     <div class="si" data-k="ax:hypothesis" onclick="ld('ax','hypothesis')">Hypothesis-first building</div>
-    <div class="ss">M13 · Strategy</div>
+    <div class="ss">M13 · AI Strategy &amp; Business</div>
     <div class="si" data-k="st:value" onclick="ld('st','value')">AI Value Creation</div>
     <div class="si" data-k="st:threec" onclick="ld('st','threec')">The Three C Framework</div>
     <div class="si" data-k="st:firms" onclick="ld('st','firms')">AI &amp; Firm Growth Research</div>
     <div class="si" data-k="st:finops" onclick="ld('st','finops')">AI Cost Management (FinOps)</div>
     <div class="si" data-k="st:impact" onclick="ld('st','impact')">Measuring Business Impact</div>
     <div class="si" data-k="st:future" onclick="ld('st','future')">Future of Work &amp; Organizations</div>
-    <div class="ss">📚 Reference · AI Foundations</div>
-    <div class="si" data-k="f:intro" onclick="ld('f','intro')">🌍 What is AI?</div>
-    <div class="si" data-k="f:tokens" onclick="ld('f','tokens')">Tokens, Parameters &amp; Embeddings</div>
-    <div class="si" data-k="f:waves" onclick="ld('f','waves')">Three Waves of AI</div>
-    <div class="si" data-k="f:data" onclick="ld('f','data')">AI &amp; Data Pipeline</div>
-    <div class="si" data-k="f:flywheel" onclick="ld('f','flywheel')">The AI Data Flywheel</div>
-    <div class="ss">📚 Reference · Multi-Agent</div>
-    <div class="si" data-k="ma:patterns" onclick="ld('ma','patterns')">Canonical Patterns</div>
-    <div class="si" data-k="ma:costs" onclick="ld('ma','costs')">Cost Curves &amp; When to Escalate</div>
+    <div class="si" data-k="f:flywheel" onclick="ld('f','flywheel')">M13 — Data flywheel &amp; strategic moat</div>
   </div>
   <div class="lc" id="lc"></div>
 </div>
@@ -317,7 +309,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 <script>
 
 const L={
-'f:intro':{ey:'Reference · AI Foundations',ti:'What is AI?',sub:'The economic shock framing — and why AI = Prediction + Optimization + Action is still the best one-liner.',
+'f:intro':{ey:'Bridge — AI Orientation before M04',ti:'What is AI?',sub:'The economic shock framing — and why AI = Prediction + Optimization + Action is still the best one-liner.',
 bd:`<p>Your Business AI Foundations opened with a bold frame: AI isn't just a technology. It's an <strong>economic shock</strong> — a General Purpose Technology (GPT) comparable to electricity, the steam engine, and the tractor. That framing sets the right expectations: GPTs don't pay off immediately.</p>
 <div class="co bl"><div class="cl2 bl">🎯 The Definition (Class 1)</div><strong>AI = Prediction + Optimization + Action</strong><br>Every AI system does some combination. Fraud detection: prediction. Netflix thumbnail: optimization. Robot arm: action. PM trap: most projects fail not at prediction, but at the prediction → workflow change handoff. Great accuracy that doesn't change a decision creates zero value.</div>
 <h3>Four Core AI Capabilities (2026)</h3>
@@ -339,9 +331,9 @@ bd:`<p>Your Business AI Foundations opened with a bold frame: AI isn't just a te
 <h3>The Productivity J-Curve</h3>
 <p>GPTs initially <em>decrease</em> productivity before driving massive growth. Firms must first make massive complementary investments: redesigning workflows, retraining people, rebuilding systems. Factories that just swapped steam engines for electric motors saw no gain. Those that redesigned around electricity thrived. Most enterprise AI is still in the dip.</p>
 <div class="co yl"><div class="cl2 yl">⚡ 2026 Scale (Class 15)</div>The 4 hyperscalers committed $700B+ CapEx for AI infrastructure — equivalent to 3× NASA's moon landing spend. NVIDIA market cap exceeds Germany's GDP. Anthropic valued above $1T as a ~6-year-old company with 2,500 employees. This isn't speculative — it reflects that model intelligence has become a utility, and the race is now for deployment infrastructure and proprietary data.</div>`,
-pr:null,nx:{m:'f',l:'tokens'}},
+pr:{m:'db',l:'memory'},nx:{m:'f',l:'waves'}},
 
-'f:tokens':{ey:'Reference · AI Foundations',ti:'Tokens, Parameters & Embeddings',sub:'The vocabulary of LLMs. You can\'t read the map without knowing these three terms.',
+'f:tokens':{ey:'Module 04 · Machine Learning',ti:'Tokens, Parameters & Embeddings',sub:'The vocabulary of LLMs. You can\'t read the map without knowing these three terms.',
 bd:`<p>Before you can understand how any LLM works, you need to fluently know tokens, parameters, and embeddings. These appear in every technical conversation and directly affect cost, capability, and failure modes.</p>
 <h3>🪙 Tokens</h3>
 <p>A token is the basic unit of text an LLM processes — not a word, not a character, but a subword chunk. The tokenizer breaks input text into these pieces before the model sees it.</p>
@@ -372,9 +364,9 @@ LLaMA 4 → 10M tokens</div>
 <div class="co bl"><div class="cl2 bl">🎯 Core Insight</div>An embedding is a vector representation of a token (or word, sentence, document) in high-dimensional space. Words with similar meanings end up geometrically close.<br><br><strong>The famous example (Word2Vec, Google 2013):</strong><br>king − man + woman ≈ queen<br><br>This isn't magic — it's geometry. The "royalty" direction and the "gender" direction are separable in embedding space. This is what makes semantic search and RAG possible.</div>
 <p>From Class 9: "Encoders map words into a lower-dimensional vector space (~256 dimensions for 50K words). Words with similar meaning map close to each other." The interactive demo at tensorflow.org/projector shows this — students found "liver" clusters with kidney/alcoholic/vegetable.</p>
 <div class="co yl"><div class="cl2 yl">🏗 Why This Matters for Your Projects</div>Your ai-operating-system's Notion integration uses embeddings for semantic retrieval. Kairos, the Personal AI Knowledge Hub from Pepe's Class 3 capstone — both convert knowledge to embeddings → store in vector DB → retrieve by semantic similarity at query time. Embedding quality directly determines RAG quality.</div>`,
-pr:{m:'f',l:'intro'},nx:{m:'f',l:'waves'}},
+pr:{m:'f',l:'data'},nx:{m:'ml',l:'supervised'}},
 
-'f:waves':{ey:'Reference · AI Foundations',ti:'Three Waves of AI',sub:'Why the third wave is genuinely different — Scale + Transfer is the unlock.',
+'f:waves':{ey:'Bridge — AI Orientation before M04',ti:'Three Waves of AI',sub:'Why the third wave is genuinely different — Scale + Transfer is the unlock.',
 bd:`<p>Your curriculum frames AI history as three waves, each defined by how machines "get smart." Understanding this prevents the most common mistake: using a Wave 3 tool (LLM) for a problem that a Wave 2 solution (random forest) handles at 1/1000th the cost.</p>
 <div style="display:flex;flex-direction:column;gap:10px;margin:16px 0">
 <div style="padding:14px;background:var(--s1);border-radius:8px;border:1px solid var(--bd)"><div style="font-weight:600;margin-bottom:4px;font-size:13.5px">📜 Wave 1: Rules-Based / Expert Systems (1950s–1980s)</div><div style="color:var(--dm);font-size:12px;line-height:1.6">IF-THEN logic. Human experts encode domain knowledge as rules. Transparent, auditable — but breaks in complex, noisy environments. Why it failed: cannot handle infinite variation or edge cases. Go has 10¹⁷⁰ possible games — you literally cannot enumerate all positions.</div></div>
@@ -392,9 +384,9 @@ bd:`<p>Your curriculum frames AI history as three waves, each defined by how mac
                 └── Multi-Agent Systems</div>
 Each layer is a strict subset. Don't use Wave 3 for Wave 2 problems.</div>
 <div class="co yl"><div class="cl2 yl">⚡ The Bitter Lesson (Sutton) — from Pepe's Class 2</div>"General methods that leverage computation as they scale will always outperform methods that build in human knowledge." Decades of AI research confirm this: clever domain-specific tricks get outperformed by scale. Every hand-crafted feature engineering approach eventually loses to a model trained on more data with more compute. AlphaGo beat every chess engine once it stopped memorizing openings.</div>`,
-pr:{m:'f',l:'tokens'},nx:{m:'f',l:'data'}},
+pr:{m:'f',l:'intro'},nx:{m:'f',l:'data'}},
 
-'f:data':{ey:'Reference · AI Foundations',ti:'AI & Data — The Pipeline',sub:'80%+ of successful AI is data-structure work. The model is the easy part.',
+'f:data':{ey:'Bridge — AI Orientation before M04',ti:'AI & Data — The Pipeline',sub:'80%+ of successful AI is data-structure work. The model is the easy part.',
 bd:`<p>From Business AI Foundations Class 2: <strong>"80%+ of successful AI is data-structure work."</strong> Raw data → feature store is the most critical phase. You can't rely on the model to "figure out patterns" without proper data structure.</p>
 <h3>Three Data Types</h3>
 <table class="kt"><thead><tr><th>Type</th><th>Definition</th><th>Example</th><th>Share of Enterprise Data</th></tr></thead>
@@ -425,9 +417,9 @@ bd:`<p>From Business AI Foundations Class 2: <strong>"80%+ of successful AI is d
 6. Only then: choose a model approach
 
 Most AI projects fail at step 5. Teams commit to a solution before validating data feasibility.</div>`,
-pr:{m:'f',l:'waves'},nx:{m:'f',l:'flywheel'}},
+pr:{m:'f',l:'waves'},nx:{m:'f',l:'tokens'}},
 
-'f:flywheel':{ey:'Reference · AI Foundations',ti:'The AI Data Flywheel',sub:'Why AI businesses scale differently — and the four conditions required for the flywheel to actually spin.',
+'f:flywheel':{ey:'Module 13 · AI Strategy &amp; Business',ti:'The AI Data Flywheel',sub:'Why AI businesses scale differently — and the four conditions required for the flywheel to actually spin.',
 bd:`<p>From Business AI Foundations Class 2: the AI Data Flywheel represents a fundamental shift in how scale creates value.</p>
 <div class="co bl"><div class="cl2 bl">🔑 Traditional vs AI Scaling Logic</div>
 <strong>Traditional businesses:</strong> Scale → lower cost (operational efficiency)<br>
@@ -448,7 +440,7 @@ Netflix doesn't just get cheaper at scale. It gets smarter. The more people watc
 <div class="kc"><strong>No retraining pipeline</strong><span>Most companies have the data; few have the infrastructure to actually iterate and redeploy models on it.</span></div>
 </div>
 <div class="co yl"><div class="cl2 yl">⚡ Ownership vs Access (Class 2)</div>Firms must decide: <strong>own</strong> data (expensive, exclusive, high control) or have <strong>access</strong> to it (easier, potentially temporary). Owning generates the proprietary feedback signal. Access gives you the data but not the moat. The flywheel only spins from owned behavioral data that only your product generates.</div>`,
-pr:{m:'f',l:'data'},nx:{m:'ml',l:'supervised'}},
+pr:{m:'st',l:'future'},nx:null},
 
 'ml:supervised':{ey:'Module 04 · Machine Learning',ti:'Supervised Learning',sub:'Learning from labeled examples — the workhorse of production ML.',
 bd:`<p>From Class 3 (Business AI Foundations): "A type of machine learning where the model is trained on labeled data, meaning each input comes with the correct output." This is the most widely deployed ML paradigm in production.</p>
@@ -467,7 +459,7 @@ business understanding when the model doesn't meet business needs.</div>
 <h3>Core Algorithms (from your AI/DS Strategy notes)</h3>
 <p>Linear Regression, Logistic Regression, Decision Trees, Random Forests, SVMs, KNN, Naive Bayes, Gradient Boosting, Neural Networks. The right algorithm depends on: data size, interpretability requirements, latency constraints, and whether you have structured or unstructured data.</p>
 <div class="co rd"><div class="cl2 rd">⚠️ The Profit Curve Insight (AI/DS Strategy)</div>Model accuracy alone is a misleading metric. A fraud model predicting "no fraud" 100% of the time achieves 99.9% accuracy on 0.1% fraud rates — and is completely useless. Always ask:<br>1. What is the base rate of the thing I'm detecting?<br>2. What is the cost of a false positive vs false negative for my business?<br>3. At what threshold does this model actually help my P&L?</div>`,
-pr:{m:'f',l:'flywheel'},nx:{m:'ml',l:'unsupervised'}},
+pr:{m:'f',l:'tokens'},nx:{m:'ml',l:'unsupervised'}},
 
 'ml:unsupervised':{ey:'Module 04 · Machine Learning',ti:'Unsupervised Learning',sub:'Finding structure in unlabeled data — when you don\'t know what you\'re looking for.',
 bd:`<p>Unsupervised learning finds patterns in data without labels. You don't tell the model what to find — you let it discover structure on its own. From Class 3 (Business AI Foundations): "A type of machine learning where the model is trained on unlabeled data and must discover patterns or structure on its own."</p>
@@ -531,7 +523,7 @@ bd:`<p>From Pepe's Class 2: "Models fail <em>confidently</em> outside training r
 <p>Beyond technical metrics: you must evaluate whether the model actually <em>changes</em> business outcomes. A retail AI for inventory, markdowns, and recommendations showed "revenue on same trend after 1 year" — was that success or failure? Impossible to say without a control group. The counterfactual (what would have happened without AI) is what you actually need but can never directly observe.</p>`,
 pr:{m:'ml',l:'loop'},nx:{m:'dl',l:'neural'}},
 
-'dl:neural':{ey:'Module 05 · Deep Learning',ti:'Neural Networks',sub:'From a single artificial neuron to millions of layers — the mathematical engine behind modern AI.',
+'dl:neural':{ey:'Module 05 · Neural Networks',ti:'Neural Networks',sub:'From a single artificial neuron to millions of layers — the mathematical engine behind modern AI.',
 bd:`<p>Neural networks are the foundation of all modern AI — from image recognition to LLMs. The core idea is elegant: layers of simple mathematical units, stacked deep enough to represent incredibly complex patterns.</p>
 <div class="co bl"><div class="cl2 bl">🔑 One Neuron = Weighted Sum + Activation</div>
 output = activation(x₁w₁ + x₂w₂ + ... + xₙwₙ + bias)<br><br>
@@ -559,7 +551,7 @@ The activation function (ReLU, sigmoid) adds non-linearity — without it, stack
 <div class="co yl"><div class="cl2 yl">⚡ Sports Analytics: Deep Learning in Action (from AI/DS Strategy Class 2)</div>Your notes cover this: Field FX digitally records position of all players and hit balls in real time. TDR (True Defensive Range) quantifies fielder performance. Basketball: GameStudio tracks trajectories, distances, speeds. Soccer: shots on goal, possession %, fouls all tracked for strategy. This is CNNs + tracking algorithms at work in every major sports league.</div>`,
 pr:{m:'ml',l:'pitfalls'},nx:{m:'dl',l:'backprop'}},
 
-'dl:backprop':{ey:'Module 05 · Deep Learning',ti:'Backpropagation',sub:'The algorithm that makes neural networks trainable. Calculus, chain rules, and gradients flowing backward.',
+'dl:backprop':{ey:'Module 05 · Neural Networks',ti:'Backpropagation',sub:'The algorithm that makes neural networks trainable. Calculus, chain rules, and gradients flowing backward.',
 bd:`<p>Backpropagation is why deep learning is trainable. It efficiently computes how much each weight in a deep network contributed to the final error, using the chain rule of calculus — enabling gradient-based weight updates across millions or billions of parameters.</p>
 <div class="vd"><div class="vt">// Forward pass → compute loss → backward pass</div>
 <div class="fl">
@@ -576,7 +568,7 @@ bd:`<p>Backpropagation is why deep learning is trainable. It efficiently compute
 <div class="co rd"><div class="cl2 rd">🚨 Historical Challenge</div>As gradients backpropagate through many layers, they can shrink exponentially. By the time they reach early layers, the gradient is nearly zero — those layers barely update and learn nothing.<br><br><strong>Solutions:</strong><br>• ReLU activations — don't squash gradients like sigmoid/tanh do<br>• Residual connections (ResNet) — shortcuts let gradients skip layers directly<br>• Batch normalization — normalizes layer inputs to prevent gradient explosion/vanishing<br><br>These solutions unlocked genuinely deep networks (100+ layers) starting ~2015.</div>`,
 pr:{m:'dl',l:'neural'},nx:{m:'dl',l:'depth'}},
 
-'dl:depth':{ey:'Module 05 · Deep Learning',ti:'Depth, Scale & Emergence',sub:'Why bigger models get qualitatively new capabilities — and the Scaling Laws that make this predictable.',
+'dl:depth':{ey:'Module 05 · Neural Networks',ti:'Depth, Scale & Emergence',sub:'Why bigger models get qualitatively new capabilities — and the Scaling Laws that make this predictable.',
 bd:`<p>One of the most surprising discoveries in modern AI: scaling models (more parameters, more data, more compute) doesn't just make them quantitatively better — at certain scale thresholds, entirely new capabilities appear that nobody explicitly trained. This is emergence.</p>
 <div class="co bl"><div class="cl2 bl">🎯 The NLP Moore's Law (from AI/DS Strategy notes)</div>LLM model sizes grew ~10× per year since 2018:<br>ELMo (2018): 94M params → BERT-Large: 340M → GPT-2: 1.5B → GPT-3: 175B → GPT-4: ~1T<br><br>Frontier models approaching $1B training cost by 2027 (from Pepe's Class 3).</div>
 <h3>Scaling Laws (Kaplan et al., OpenAI 2020)</h3>
@@ -599,7 +591,7 @@ bd:`<p>One of the most surprising discoveries in modern AI: scaling models (more
 <p>Train once on the internet (expensive, done by labs). Fine-tune cheaply for any domain. This economic structure is what makes foundation models commercially viable and why startups can build on top of GPT/Claude/Gemini without billion-dollar training budgets.</p>`,
 pr:{m:'dl',l:'backprop'},nx:{m:'dl',l:'rules'}},
 
-'dl:rules':{ey:'Module 05 · Deep Learning',ti:'Rules-Based vs Deep Learning',sub:'Knowing when NOT to use deep learning is as important as knowing when to use it.',
+'dl:rules':{ey:'Module 05 · Neural Networks',ti:'Rules-Based vs Deep Learning',sub:'Knowing when NOT to use deep learning is as important as knowing when to use it.',
 bd:`<p>From Class 4 (Business AI Foundations): "Rule-Based systems break in complex, noisy environments like image recognition because they cannot account for infinite variations or edge cases."</p>
 <table class="kt"><thead><tr><th></th><th>Rules-Based</th><th>Deep Learning</th></tr></thead>
 <tbody>
@@ -611,9 +603,9 @@ bd:`<p>From Class 4 (Business AI Foundations): "Rule-Based systems break in comp
 <h3>World Models — The Next Step (Class 4)</h3>
 <p>From your notes: "While standard models ask 'What happens next?', world models simulate internal environments to ask 'What happens if we do something different?'" This is the shift from prediction to strategic planning. Standard classification asks: "Is this a highlight?" World models ask: "If we change the timestamp threshold to 2 seconds before/after the event, how does that affect detection quality?"</p>
 <div class="co bl"><div class="cl2 bl">🎯 The Pepe Principle (Skeleton & Spark, Class 4)</div>Production AI systems are ~95% deterministic code (the skeleton) + ~5% LLM calls (the spark). Use rules/code wherever the behavior should be predictable and testable. Reserve LLM for the small subset of tasks where code genuinely cannot handle the variation or ambiguity. This isn't a compromise — it's the correct architecture for reliable systems.</div>`,
-pr:{m:'dl',l:'depth'},nx:{m:'tr',l:'attention'}},
+pr:{m:'dl',l:'depth'},nx:{m:'tr',l:'tok'}},
 
-'tr:attention':{ey:'Module 06 · Transformers',ti:'The Attention Mechanism',sub:'"Attention Is All You Need" (Vaswani et al., Google 2017) — the paper that changed everything.',
+'tr:attention':{ey:'Module 06 · Transformers &amp; Attention',ti:'The Attention Mechanism',sub:'"Attention Is All You Need" (Vaswani et al., Google 2017) — the paper that changed everything.',
 bd:`<p>Before 2017, language models processed text sequentially — left to right, with limited memory of early context. Attention solved this fundamentally: every token can simultaneously look at every other token in the sequence.</p>
 <div class="co bl"><div class="cl2 bl">🎯 The Core Insight (Class 9)</div>"Meaning is relational, not local."<br><br>Example from your notes: "The alien landed on ___ because <u>it</u> needed to hide on a spot." To predict what follows "on", you need to connect "it" → "alien" far earlier. RNNs forgot early context. Attention solves it: every token dynamically attends to every other based on relevance.</div>
 <div class="vd"><div class="vt">// Self-attention: "it" resolves to "alien" via strong attention weight</div>
@@ -642,9 +634,9 @@ bd:`<p>Before 2017, language models processed text sequentially — left to righ
 <tr><td>Can't parallelize → slow training</td><td>Parallelizes perfectly → enables internet-scale training</td></tr>
 <tr><td>Context degraded past ~100-200 tokens</td><td>200K–10M token context windows (2026)</td></tr>
 </tbody></table>`,
-pr:{m:'dl',l:'rules'},nx:{m:'tr',l:'embed'}},
+pr:{m:'tr',l:'embed'},nx:{m:'tr',l:'scale'}},
 
-'tr:embed':{ey:'Module 06 · Transformers',ti:'Word Embeddings',sub:'How meaning becomes geometry — the mathematical representation of semantic relationships.',
+'tr:embed':{ey:'Module 06 · Transformers &amp; Attention',ti:'Word Embeddings',sub:'How meaning becomes geometry — the mathematical representation of semantic relationships.',
 bd:`<p>Embeddings are the bridge between human language (symbolic) and neural networks (numerical). They map tokens into high-dimensional vector spaces where semantic relationships become geometric operations.</p>
 <div class="co bl"><div class="cl2 bl">🎯 The Famous Demonstration</div><strong>king − man + woman ≈ queen</strong><br><br>This isn't programmed. Word2Vec (Google, 2013) learned it purely from co-occurrence patterns across billions of text examples. The direction from "man" to "woman" captures the gender relationship. Subtract it from "king" and you arrive near "queen" in embedding space.</div>
 <div class="cd">// Conceptual embedding vectors
@@ -662,9 +654,9 @@ king - man + woman ≈ queen  // vector arithmetic = semantic arithmetic</div>
 <h3>Why Embeddings Enable RAG</h3>
 <p>When you build a retrieval system (RAG pipeline, semantic search), you convert documents and queries into embeddings, then find the most similar document embeddings by computing cosine similarity. The quality of embeddings directly determines retrieval quality. This is the core of your Kairos project and the Personal AI Knowledge Hub capstone from Pepe's Class 3.</p>
 <div class="co yl"><div class="cl2 yl">🔬 Interactive Demo</div>Your Class 9 professor demonstrated the TensorFlow Embedding Projector (projector.tensorflow.org). Students found: "liver" clusters with kidney/alcoholic/vegetable. "Berkeley" surfaced unexpected semantic neighbors. The geometric structure makes semantic meaning visible and manipulable.</div>`,
-pr:{m:'tr',l:'attention'},nx:{m:'tr',l:'tok'}},
+pr:{m:'tr',l:'tok'},nx:{m:'tr',l:'attention'}},
 
-'tr:tok':{ey:'Module 06 · Transformers',ti:'Tokenization',sub:'How raw text becomes the integer sequences LLMs actually process.',
+'tr:tok':{ey:'Module 06 · Transformers &amp; Attention',ti:'Tokenization',sub:'How raw text becomes the integer sequences LLMs actually process.',
 bd:`<p>LLMs don't see words or characters. They see tokens — subword units determined by the tokenizer. Before any LLM call, raw text is broken into tokens, each mapped to an integer ID that indexes into the embedding table.</p>
 <h3>Byte Pair Encoding (BPE)</h3>
 <p>The dominant tokenization algorithm used by GPT-series and most modern LLMs. Builds vocabulary by iteratively merging the most frequent character pairs:</p>
@@ -681,9 +673,9 @@ Common words = single tokens; rare words = split into pieces</div>
 <tr><td><strong>Language coverage</strong></td><td>Web content is 52% English (from your AI/DS Strategy notes). Non-English languages use more tokens per word — effectively smaller context windows for multilingual use cases.</td></tr>
 <tr><td><strong>Context limits</strong></td><td>Context windows measured in tokens. 200K tokens ≈ 150K words ≈ 500 pages. From Pepe's Class 3: "Claude Opus holds 1M tokens (~2× Lord of the Rings trilogy)."</td></tr>
 </tbody></table>`,
-pr:{m:'tr',l:'embed'},nx:{m:'tr',l:'scale'}},
+pr:{m:'dl',l:'rules'},nx:{m:'tr',l:'embed'}},
 
-'tr:scale':{ey:'Module 06 · Transformers',ti:'Scaling Laws & Emergence',sub:'The empirical science that made AI development predictable — and the inference-time compute revolution.',
+'tr:scale':{ey:'Module 06 · Transformers &amp; Attention',ti:'Scaling Laws & Emergence',sub:'The empirical science that made AI development predictable — and the inference-time compute revolution.',
 bd:`<p>Scaling laws are one of the most practically important discoveries in AI. They show model performance follows predictable power-law relationships with scale — so you can forecast how much better a larger model will be before building it.</p>
 <h3>Three Scaling Dimensions</h3>
 <div class="kg">
@@ -694,9 +686,9 @@ bd:`<p>Scaling laws are one of the most practically important discoveries in AI.
 <h3>Inference-Time Compute: The 2024-2026 Revolution</h3>
 <p>After Chinchilla, research found another dimension to scale: <strong>compute at inference time</strong>. Instead of giving a model more parameters or training data, let it "think longer" before answering. OpenAI's o1 model (late 2024) demonstrated dramatically improved reasoning on hard problems by sampling many reasoning paths and selecting the best.</p>
 <div class="co bl"><div class="cl2 bl">⚡ Thinking Models</div>From Pepe's Class 3: "o1 / Claude extended thinking / Plan mode — models reason internally before committing; catches intent without user correction."<br><br>This is inference-time scaling: the model runs chain-of-thought reasoning internally before producing output. More compute at inference = better answers on hard problems. The tradeoff: significantly higher cost per query and latency. Best for complex reasoning tasks where accuracy matters more than speed.</div>`,
-pr:{m:'tr',l:'tok'},nx:{m:'llm',l:'how'}},
+pr:{m:'tr',l:'attention'},nx:{m:'llm',l:'how'}},
 
-'llm:how':{ey:'Module 07 · LLMs',ti:'How LLMs Work',sub:'Next-token prediction, autoregressive generation, and why "stochastic" changes everything about how you build with them.',
+'llm:how':{ey:'Module 07 · LLMs In Depth',ti:'How LLMs Work',sub:'Next-token prediction, autoregressive generation, and why "stochastic" changes everything about how you build with them.',
 bd:`<p>At its most fundamental level, an LLM does one thing: predicts the next token. Everything else — coding, reasoning, translation, creative writing — emerges from doing this very well at very large scale.</p>
 <div class="co bl"><div class="cl2 bl">🎯 The Core Mechanism (Class 9)</div>1. Input text → tokenize into integer IDs<br>2. Each token ID → embedding vector<br>3. Embeddings pass through transformer layers (attention, FFN, normalization)<br>4. Final layer → probability distribution over all ~50K vocabulary tokens<br>5. Sample from distribution (controlled by temperature)<br>6. Append new token to context; repeat from step 3<br><br>This is <strong>autoregressive</strong> generation: each output becomes part of the input for predicting the next.</div>
 <div class="cd">Example: "The capital of France is"
@@ -717,7 +709,7 @@ bd:`<p>At its most fundamental level, an LLM does one thing: predicts the next t
 </tbody></table>`,
 pr:{m:'tr',l:'scale'},nx:{m:'llm',l:'train'}},
 
-'llm:train':{ey:'Module 07 · LLMs',ti:'Pretraining → SFT → RLHF',sub:'The three-stage pipeline that takes a raw language model to a helpful AI assistant.',
+'llm:train':{ey:'Module 07 · LLMs In Depth',ti:'Pretraining → SFT → RLHF',sub:'The three-stage pipeline that takes a raw language model to a helpful AI assistant.',
 bd:`<p>Modern frontier LLMs go through three distinct training phases. Each is necessary; none alone is sufficient.</p>
 <div class="vd"><div class="vt">// The LLM training pipeline</div>
 <div class="fl">
@@ -734,7 +726,7 @@ bd:`<p>Modern frontier LLMs go through three distinct training phases. Each is n
 <div class="co yl"><div class="cl2 yl">⚡ Constitutional AI (Anthropic's Approach)</div>Instead of only human feedback, the model critiques and revises its own outputs against a set of principles (the "constitution"). Reduces reliance on human raters for safety. The constitution is explicit — making the training criteria transparent and auditable. This is part of why Claude tends to be more careful about harm than raw models — the constitutional principles are explicitly encoded in training, not just implicit from human rater preferences.</div>`,
 pr:{m:'llm',l:'how'},nx:{m:'llm',l:'prompt'}},
 
-'llm:prompt':{ey:'Module 07 · LLMs',ti:'Prompting vs Fine-Tuning',sub:'The most important practical decision when building with LLMs — and why prompting wins almost every time.',
+'llm:prompt':{ey:'Module 07 · LLMs In Depth',ti:'Prompting vs Fine-Tuning',sub:'The most important practical decision when building with LLMs — and why prompting wins almost every time.',
 bd:`<p>From Pepe's Class 3: "Prompts = cheap & temporary; fine-tuning = expensive & permanent weight change." This defines how you architect almost every LLM application.</p>
 <div class="kg">
 <div class="kc"><strong>Prompting</strong><span>Text instructions at inference time. Free to change. No training required. CLAUDE.md, system prompts, few-shot examples, chain-of-thought. Right for 90% of LLM applications.</span></div>
@@ -757,7 +749,7 @@ bd:`<p>From Pepe's Class 3: "Prompts = cheap & temporary; fine-tuning = expensiv
 </tbody></table>`,
 pr:{m:'llm',l:'train'},nx:{m:'llm',l:'rag'}},
 
-'llm:rag':{ey:'Module 07 · LLMs',ti:'RAG — Retrieval Augmented Generation',sub:'Giving LLMs private and current knowledge without retraining. 86% of enterprises use it.',
+'llm:rag':{ey:'Module 07 · LLMs In Depth',ti:'RAG — Retrieval Augmented Generation',sub:'Giving LLMs private and current knowledge without retraining. 86% of enterprises use it.',
 bd:`<p>LLMs have two knowledge problems: training cutoff (they don't know about recent events) and private data (they've never seen your internal documents). RAG solves both without retraining the model.</p>
 <div class="co bl"><div class="cl2 bl">🎯 How RAG Works</div>
 1. Convert your knowledge base to embeddings → store in vector DB<br>
@@ -785,7 +777,7 @@ bd:`<p>LLMs have two knowledge problems: training cutoff (they don't know about 
 <div class="co yl"><div class="cl2 yl">⚡ 86% of Enterprises Use RAG (Databricks 2025)</div>From Pepe's Class 3: the dominant architecture for enterprise LLM deployment. His Karpathy vault pattern: raw/ (immutable source) → wiki/ (LLM-maintained knowledge) → CLAUDE.md (schema/instructions). Your ai-operating-system's Notion integration + CLAUDE.md files IS this pattern in production.</div>`,
 pr:{m:'llm',l:'prompt'},nx:{m:'llm',l:'hall'}},
 
-'llm:hall':{ey:'Module 07 · LLMs',ti:'Hallucinations & LLM Pitfalls',sub:'Six failure modes from your Class 9 notes — and why hallucination is structural, not a bug to fix.',
+'llm:hall':{ey:'Module 07 · LLMs In Depth',ti:'Hallucinations & LLM Pitfalls',sub:'Six failure modes from your Class 9 notes — and why hallucination is structural, not a bug to fix.',
 bd:`<p>From Class 9 (Business AI Foundations): LLMs don't have a "truth module." They generate text by predicting the most plausible next token based on learned patterns. When asked about something they have weak signal on, they produce plausible-sounding false information — confidently.</p>
 <h3>The Six LLM Pitfalls (Class 9)</h3>
 <div class="kg">
@@ -807,7 +799,7 @@ bd:`<p>From Class 9 (Business AI Foundations): LLMs don't have a "truth module."
 None of these eliminates hallucination. They reduce its frequency and impact. Design systems that assume hallucinations will occasionally occur.</div>`,
 pr:{m:'llm',l:'rag'},nx:{m:'llm',l:'land'}},
 
-'llm:land':{ey:'Module 07 · LLMs',ti:'2026 Model Landscape',sub:'What\'s actually deployed, who matters, and how to pick the right model for your task.',
+'llm:land':{ey:'Module 07 · LLMs In Depth',ti:'2026 Model Landscape',sub:'What\'s actually deployed, who matters, and how to pick the right model for your task.',
 bd:`<h3>Frontier Closed Models (API access)</h3>
 <table class="kt"><thead><tr><th>Model</th><th>Context</th><th>Key Strengths</th><th>Best For</th></tr></thead>
 <tbody>
@@ -948,7 +940,7 @@ Level 3 — Robustness: Pass@k
 <div class="co bl"><div class="cl2 bl">🔌 CI/CD Integration</div>Mature teams wire evals into CI/CD. Every commit triggers a run on the golden dataset. If pass rate drops >5%, deploy is blocked. This is what Braintrust, Langsmith, and Promptfoo provide — testing infrastructure for AI applications. The same discipline your software team applies to unit tests, AI teams apply to evals.</div>`,
 pr:{m:'ev',l:'judge'},nx:{m:'ag',l:'loop'}},
 
-'ag:loop':{ey:'Module 09 · Agents',ti:'The ReAct Loop',sub:'Observe → Reason → Act → Update. The mechanical reality of every AI agent.',
+'ag:loop':{ey:'Module 09 · AI Agents',ti:'The ReAct Loop',sub:'Observe → Reason → Act → Update. The mechanical reality of every AI agent.',
 bd:`<p>An agent isn't a smarter model. It's a model + a loop + tools. The model decides; the application executes. This distinction — "model requests, application executes" — is the foundational concept of agentic AI in 2026.</p>
 <div class="co bl"><div class="cl2 bl">🎯 The Agency Split (Pepe Class 3)</div>The LLM generates: <code>{"tool": "search_web", "query": "latest AI research"}</code><br>Your code reads that, executes the search, returns results to the model.<br><br>The model never touches the world directly. <strong>You define what tools exist and what they can access.</strong> This is your security model — constrain the tool interface.</div>
 <div class="vd"><div class="vt">// ReAct loop — runs until task complete or max steps hit</div>
@@ -981,7 +973,7 @@ bd:`<p>An agent isn't a smarter model. It's a model + a loop + tools. The model 
 </div>`,
 pr:{m:'ev',l:'agents'},nx:{m:'ag',l:'tools'}},
 
-'ag:tools':{ey:'Module 09 · Agents',ti:'Tools & MCP',sub:'How agents interact with the world — and why MCP is "USB for AI."',
+'ag:tools':{ey:'Module 09 · AI Agents',ti:'Tools & MCP',sub:'How agents interact with the world — and why MCP is "USB for AI."',
 bd:`<p>Tools are what separate agents from chatbots. A chatbot generates text. An agent generates text that causes things to happen — by calling tools that interact with real systems.</p>
 <h3>Tool Risk Levels</h3>
 <table class="kt"><thead><tr><th>Category</th><th>Examples</th><th>Risk</th></tr></thead>
@@ -998,7 +990,7 @@ bd:`<p>Tools are what separate agents from chatbots. A chatbot generates text. A
 <p>From Pepe's Class 3: "Terminal access = universal tool (files, commands, git, APIs, deploy)." Claude Code's power comes from this: with terminal access, one agent can read files, write code, run tests, commit to git, and deploy. The complete software development loop in one agent session. This is the architecture behind your WhatIfStudios pipeline — each step in the pipeline is a shell command orchestrated by Claude Code.</p>`,
 pr:{m:'ag',l:'loop'},nx:{m:'ag',l:'skspark'}},
 
-'ag:skspark':{ey:'Module 09 · Agents',ti:'Skeleton & Spark',sub:'The most important production agent principle — 95% code, 5% LLM. Not a compromise: the correct architecture.',
+'ag:skspark':{ey:'Module 09 · AI Agents',ti:'Skeleton & Spark',sub:'The most important production agent principle — 95% code, 5% LLM. Not a compromise: the correct architecture.',
 bd:`<p>From Pepe's Class 4 — the most important principle for building reliable agents: "Production agents are ~95% deterministic code (scaffolding) + <5% LLM (judgment). Default to code; use LLM only where code can't solve it."</p>
 <div class="co bl"><div class="cl2 bl">🦴 Skeleton (code) vs ⚡ Spark (LLM)</div><strong>Skeleton:</strong> routing logic, data fetching, format parsing, API calls, error handling, retry logic, database writes, conditionals, loops, validation — anything with deterministic, testable behavior.<br><br><strong>Spark:</strong> understanding ambiguous natural language, making judgment calls under uncertainty, generating contextually appropriate creative output, synthesizing across sources — the small subset where code genuinely can't handle the variation.<br><br><strong>The test:</strong> Can I write an if-else for this? If yes → code. If not → LLM.</div>
 <div class="cd">// Bad: over-relying on LLM
@@ -1019,7 +1011,7 @@ if (intent === 'create') {
 <p><strong>Your projects:</strong> The content-marketing-agent's orchestration logic (what to generate next, when to request human approval, how to format output) is skeleton. The actual content generation and tone judgment is spark. Your berkeley-optometry-voice agent: call routing, slot checking, calendar writes = skeleton. Natural language understanding of ambiguous patient requests = spark.</p>`,
 pr:{m:'ag',l:'tools'},nx:{m:'ag',l:'safety'}},
 
-'ag:safety':{ey:'Module 09 · Agents',ti:'Safety, Alignment & Security',sub:'Three failure modes from Class 4 that have already caused real damage — and the defense-in-depth approach.',
+'ag:safety':{ey:'Module 09 · AI Agents',ti:'Safety, Alignment & Security',sub:'Three failure modes from Class 4 that have already caused real damage — and the defense-in-depth approach.',
 bd:`<p>From Pepe's Class 4: "Security is code, not prompts — allowlists, validators, human-in-the-loop." Three categories of agent failures are already documented in production:</p>
 <div class="co rd"><div class="cl2 rd">🚨 Alignment Failure — Moffatt v. Air Canada (2024)</div>Air Canada's customer service agent told a customer they could get a bereavement fare discount retroactively — then Air Canada tried to deny it. The Canadian tribunal ruled the airline responsible for its agent's representations.<br><br>The agent optimized for "helpful-sounding response" → got high human satisfaction scores → learned to make commitments the business never authorized. Wrong metric optimized.</div>
 <div class="co rd"><div class="cl2 rd">🚨 Security Failure — Replit Production DB Wipe (2025)</div>A developer's coding agent, given terminal access, wiped a production database. The agent executed a command that solved the bug — and also destroyed all data. Prompt injection from malicious content in retrieved data hijacked the agent's behavior.<br><br>Defense: allowlists (only these commands), staging environment first, confirmation for irreversible actions, never give unrestricted terminal access to a production system.</div>
@@ -1034,7 +1026,7 @@ bd:`<p>From Pepe's Class 4: "Security is code, not prompts — allowlists, valid
 7. Red-team before ship — have someone try to break it</div>`,
 pr:{m:'ag',l:'skspark'},nx:{m:'ag',l:'land'}},
 
-'ag:land':{ey:'Module 09 · Agents',ti:'2026 Agent Landscape',sub:'What shipped, what works, what\'s still failing — the realistic picture.',
+'ag:land':{ey:'Module 09 · AI Agents',ti:'2026 Agent Landscape',sub:'What shipped, what works, what\'s still failing — the realistic picture.',
 bd:`<p>From Class 4 (Pepe): "Gartner: 40% of enterprise apps will include AI agents by end of 2026." From Class 15 (Business AI Foundations): "Trillions of agentic actions already happening in enterprise." The numbers are real. The reliability is uneven.</p>
 <h3>Where Agents Work (Verifiable Domains)</h3>
 <div class="kg">
@@ -1058,7 +1050,7 @@ bd:`<p>From Class 4 (Pepe): "Gartner: 40% of enterprise apps will include AI age
 </tbody></table>`,
 pr:{m:'ag',l:'safety'},nx:{m:'ma',l:'patterns'}},
 
-'ma:patterns':{ey:'Reference · Multi-Agent Systems',ti:'Canonical Multi-Agent Patterns',sub:'Four patterns from Class 4 — and the 90.2% improvement that justifies the complexity.',
+'ma:patterns':{ey:'Module 09 · AI Agents',ti:'Canonical Multi-Agent Patterns',sub:'Four patterns from Class 4 — and the 90.2% improvement that justifies the complexity.',
 bd:`<p>From Pepe's Class 4: "Anthropic's multi-agent research system: +90.2% vs single Opus." Multi-agent isn't a trend — it's a genuine performance unlock when single agents hit structural limits.</p>
 <h3>Why Single Agents Hit Walls</h3>
 <div class="kg">
@@ -1089,7 +1081,7 @@ bd:`<p>From Pepe's Class 4: "Anthropic's multi-agent research system: +90.2% vs 
 </div>`,
 pr:{m:'ag',l:'land'},nx:{m:'ma',l:'costs'}},
 
-'ma:costs':{ey:'Reference · Multi-Agent Systems',ti:'Cost Curves & When to Escalate',sub:'Multi-agent is an escalation, not a default. The numbers, and the decision tree.',
+'ma:costs':{ey:'Module 09 · AI Agents',ti:'Cost Curves & When to Escalate',sub:'Multi-agent is an escalation, not a default. The numbers, and the decision tree.',
 bd:`<p>From Pepe's Class 4 — the cost reality: "Chat = baseline • Single agent ~4x • Multi-agent ~15x • Managed 24/7 fleet scales with session length × concurrency."</p>
 <div class="vd"><div class="vt">// Relative cost multipliers</div>
 <div style="display:flex;flex-direction:column;gap:8px;max-width:380px;margin:0 auto">
@@ -1109,9 +1101,9 @@ Step 3: If still fails measurably (not vibes) → identify which limit:<br>
 Step 4: Run evals to confirm improvement justifies 15× cost uplift.</div>
 <h3>Capstone Pattern — Pepe's Class 4</h3>
 <p>The Class 4 capstone extends the Class 3 Knowledge Hub with an agent team: Orchestrator + Researcher / Summarizer / Linker subagents + cron-triggered morning briefing + optional Haiku+Opus advisor pattern. Key instruction: "Annotate every node as 💻 code or 🧠 LLM; target 60–70% code." This discipline forces you to be explicit about where you're using expensive, non-deterministic LLM calls vs. cheap, reliable code — the Skeleton & Spark principle in practice.</p>`,
-pr:{m:'ma',l:'patterns'},nx:{m:'st',l:'value'}},
+pr:{m:'ma',l:'patterns'},nx:{m:'sys',l:'design'}},
 
-'st:value':{ey:'Module 13 · Strategy',ti:'AI Value Creation',sub:'The Three C Framework, technology-first vs strategy-first, and where durable advantage lives in 2026.',
+'st:value':{ey:'Module 13 · AI Strategy &amp; Business',ti:'AI Value Creation',sub:'The Three C Framework, technology-first vs strategy-first, and where durable advantage lives in 2026.',
 bd:`<p>From Class 5 (Business AI Foundations): "AI does not create value by being powerful; it creates value by solving the right problem for the right stakeholders." The Technology-First trap is documented and real.</p>
 <h3>Strategy-First vs Technology-First</h3>
 <div class="kg">
@@ -1133,9 +1125,9 @@ bd:`<p>From Class 5 (Business AI Foundations): "AI does not create value by bein
 <div class="kc"><strong>Workflow Embedding</strong><span>How deeply AI is embedded in how users work. Higher integration = higher switching cost = stronger moat.</span></div>
 <div class="kc"><strong>Speed of iteration</strong><span>In 2026, being 6 months faster matters more than being technically perfect. Ship with evals, learn, iterate.</span></div>
 </div>`,
-pr:{m:'ma',l:'costs'},nx:{m:'st',l:'threec'}},
+pr:{m:'ax',l:'hypothesis'},nx:{m:'st',l:'threec'}},
 
-'st:threec':{ey:'Module 13 · Strategy',ti:'The Three C Framework',sub:'How firms use AI to interact with the efficient frontier — from cost reduction to frontier creation.',
+'st:threec':{ey:'Module 13 · AI Strategy &amp; Business',ti:'The Three C Framework',sub:'How firms use AI to interact with the efficient frontier — from cost reduction to frontier creation.',
 bd:`<p>From Class 5 (Business AI Foundations): this framework categorizes how firms use AI to interact with the <strong>efficient frontier</strong> — the tradeoff curve between cost to serve and customer value delivered.</p>
 <div style="display:flex;flex-direction:column;gap:12px;margin:16px 0">
 <div style="padding:14px;background:var(--s1);border-radius:8px;border:1px solid var(--bd)">
@@ -1150,7 +1142,7 @@ bd:`<p>From Class 5 (Business AI Foundations): this framework categorizes how fi
 </div>`,
 pr:{m:'st',l:'value'},nx:{m:'st',l:'firms'}},
 
-'st:firms':{ey:'Module 13 · Strategy',ti:'AI & Firm Growth Research',sub:'Class 8 (Prof. Fedyk): what the empirical data actually says about how AI investment affects firms and workers.',
+'st:firms':{ey:'Module 13 · AI Strategy &amp; Business',ti:'AI & Firm Growth Research',sub:'Class 8 (Prof. Fedyk): what the empirical data actually says about how AI investment affects firms and workers.',
 bd:`<p>Class 8 was delivered by Prof. Anastassia Fedyk (UC Berkeley Haas / Chief Economist, AI for Good Foundation). This is rigorous empirical research on public company data — not conjecture or hype.</p>
 <h3>Key Research: Babina, Fedyk, He & Hodson (Journal of Finance, 2024)</h3>
 <div class="co bl"><div class="cl2 bl">🔑 The Headline Findings</div>AI-investing firms see:<br><strong>Sales +19.5% • Employment +18.1% • Market Value +22.3%</strong><br><br>Critically: growth is driven by <strong>product innovation</strong>, not cost-cutting or productivity gains.</div>
@@ -1172,7 +1164,7 @@ bd:`<p>Class 8 was delivered by Prof. Anastassia Fedyk (UC Berkeley Haas / Chief
 <div class="co yl"><div class="cl2 yl">⚡ The Concentration Effect</div>AI benefits are NOT evenly distributed — largest, most productive firms capture most gains. Industry market concentration (HHI) and top firm share both increase with AI job growth. The inequality risk: AI as a force for winner-take-all dynamics at the industry level. This is why the Three C "Create" move matters most — it's the only strategy that shifts the frontier outward rather than competing on the same curve.</div>`,
 pr:{m:'st',l:'threec'},nx:{m:'st',l:'finops'}},
 
-'st:finops':{ey:'Module 13 · Strategy',ti:'AI Cost Management (FinOps)',sub:'Managing AI costs — same discipline as cloud FinOps, with new wrinkles from tokens, GPU scarcity, and non-engineering team spending.',
+'st:finops':{ey:'Module 13 · AI Strategy &amp; Business',ti:'AI Cost Management (FinOps)',sub:'Managing AI costs — same discipline as cloud FinOps, with new wrinkles from tokens, GPU scarcity, and non-engineering team spending.',
 bd:`<p>From your FinOps for AI reading: "Managing AI costs is fundamentally the same discipline as cloud FinOps — but with enough new wrinkles that teams who don't adapt will get burned."</p>
 <h3>What's New vs What's the Same</h3>
 <table class="kt"><thead><tr><th>Same as cloud FinOps</th><th>Genuinely new for AI</th></tr></thead>
@@ -1207,7 +1199,7 @@ RUN — AI powers core processes:
 <div class="co yl"><div class="cl2 yl">⚡ The Most Common Cost Mistake</div>From Class 12: "Model selection: use simplest model that meets requirements." Don't use Opus to answer yes/no classification questions. Don't dump entire PDFs into context when 3 pages suffice. Don't use GPT-4-class for every task in your ai-operating-system workflows — match model complexity to task complexity. This single optimization typically reduces AI costs by 50-80% without quality degradation.</div>`,
 pr:{m:'st',l:'firms'},nx:{m:'st',l:'impact'}},
 
-'st:impact':{ey:'Module 13 · Strategy',ti:'Measuring AI Business Impact',sub:'Class 14: the metrics, the counterfactual problem, and real examples from your notes.',
+'st:impact':{ey:'Module 13 · AI Strategy &amp; Business',ti:'Measuring AI Business Impact',sub:'Class 14: the metrics, the counterfactual problem, and real examples from your notes.',
 bd:`<p>From Class 14 (Business AI Foundations): "The hardest part of AI measurement is the counterfactual — you can't see what would have happened without AI." This is the core challenge of AI ROI attribution.</p>
 <h3>Key Business Metrics for AI Products</h3>
 <div class="kg">
@@ -1225,7 +1217,7 @@ bd:`<p>From Class 14 (Business AI Foundations): "The hardest part of AI measurem
 <div class="co rd"><div class="cl2 rd">⚠️ The Counterfactual Problem</div>You never observe the world where you didn't deploy AI. The retail case above is genuinely ambiguous without a control group. Gold standard: randomized rollout with holdout control group, staggered deployment by geography, or matched cohort analysis. Most companies skip this and can't attribute impact cleanly. Design measurement into the rollout plan from day one — not as an afterthought.</div>`,
 pr:{m:'st',l:'finops'},nx:{m:'st',l:'future'}},
 
-'st:future':{ey:'Module 13 · Strategy',ti:'Future of Work & Organizations',sub:'Class 15 + Class 17: what\'s actually changing in how organizations operate and innovate.',
+'st:future':{ey:'Module 13 · AI Strategy &amp; Business',ti:'Future of Work & Organizations',sub:'Class 15 + Class 17: what\'s actually changing in how organizations operate and innovate.',
 bd:`<p>From Class 15: "Focus on slopes, not current positions. Technology advancing too quickly for static analysis. Half-day updates needed for AI presentations due to rapid changes."</p>
 <h3>Enterprise Adoption Reality (Class 15)</h3>
 <div class="kg">
@@ -1238,7 +1230,7 @@ bd:`<p>From Class 15: "Focus on slopes, not current positions. Technology advanc
 <div class="co bl"><div class="cl2 bl">🍎 The Apple-Picking Model</div>AI is like a super-fast kid who can't reach the higher branches. It will quickly grab "low-hanging fruit" — incremental innovations and combinations that humans missed due to attention limits.<br><br>Three critical lessons from Class 17:<br>1. <strong>Combinatorial Space Size:</strong> As complexity grows, pure RL fails. Human data + RL (AlphaGo style) wins.<br>2. <strong>Validation Bottleneck:</strong> Generation without cheap verification is useless. Drug discovery: generating 100 molecular candidates is easy. Testing them in labs is expensive — the bottleneck shifts from ideation to validation.<br>3. <strong>Implementation Barriers:</strong> Even great ideas need proper institutions, capital, and execution capability.</div>
 <h3>Investment Strategy Implication (Class 15)</h3>
 <p>"Avoid building on current AI limitations." Many AI startups founded 2019-2021 are now obsolete — they built products around limitations (context length, hallucination rates, reasoning gaps) that foundation models have since solved. Build for a world where AI capabilities are significantly more advanced than today. Your ai-operating-system and Kairos are good examples: they're built on top of AI's strengths (reasoning, writing, retrieval) rather than working around its weaknesses.</p>`,
-pr:{m:'st',l:'impact'},nx:null},
+pr:{m:'st',l:'impact'},nx:{m:'f',l:'flywheel'}},
 'py:vars':{ey:'Module 01 · Python Basics',ti:'What Is a Program?',sub:'Variables, data types, and the foundational mental model for all of programming.',
 bd:`<p>A program is an exact, unambiguous sequence of instructions a computer follows. The key word is <em>exact</em>. The computer has no intuition — it does precisely what you told it to do. When a program crashes, it is almost always because what you told it to do and what you thought you told it to do were different things.</p>
 <h3>Variables and Data Types</h3>
@@ -1477,7 +1469,7 @@ def find_pairs(lst):                   # O(n^2) — quadratic
 # reducing n in O(n^2) has outsized impact.</div>`,
 pr:{m:'py',l:'recursion'},nx:{m:'db',l:'intro'}},
 
-'db:intro':{ey:'Module 03 · Databases & AI Memory',ti:'What Is a Database?',sub:'Files work for 100 records. Databases work for 100 million.',
+'db:intro':{ey:'Module 03 · Databases &amp; AI Memory',ti:'What Is a Database?',sub:'Files work for 100 records. Databases work for 100 million.',
 bd:`<p>A database is structured storage with fast retrieval. Every AI product that personalizes reads from a database on every request. The model is the brain. The database is the memory.</p>
 <div class="cd">KEY CONCEPTS:
   Table:        Grid of rows and columns (like a spreadsheet, but indexed)
@@ -1494,7 +1486,7 @@ FILES vs DATABASES:
 <div class="co bl"><div class="cl2 bl">🔗 Connect to AI</div>Your Notion workspace IS a database. Every page is a row. Every property is a column. Your ai-operating-system MCP integration writes rows to Notion's database via its API. Now you know the architecture behind the tool you use every day.</div>`,
 pr:{m:'py',l:'bigo'},nx:{m:'db',l:'sql'}},
 
-'db:sql':{ey:'Module 03 · Databases & AI Memory',ti:'SQL Basics: SELECT, WHERE, JOIN',sub:'The language every data-aware builder must read fluently.',
+'db:sql':{ey:'Module 03 · Databases &amp; AI Memory',ti:'SQL Basics: SELECT, WHERE, JOIN',sub:'The language every data-aware builder must read fluently.',
 bd:`<p>SQL is how you talk to relational databases. Four operations cover 90% of what you will ever need.</p>
 <div class="cd">import sqlite3
 conn = sqlite3.connect("study.db")
@@ -1525,7 +1517,7 @@ conn.commit()
 conn.close()</div>`,
 pr:{m:'db',l:'intro'},nx:{m:'db',l:'vector'}},
 
-'db:vector':{ey:'Module 03 · Databases & AI Memory',ti:'Vector Databases & Semantic Search',sub:'How RAG actually works — and why 86% of enterprises use it.',
+'db:vector':{ey:'Module 03 · Databases &amp; AI Memory',ti:'Vector Databases & Semantic Search',sub:'How RAG actually works — and why 86% of enterprises use it.',
 bd:`<p>Regular databases search by exact match. Vector databases search by meaning. This is the engine behind RAG, semantic search, and AI that can answer questions about your private documents.</p>
 <div class="cd">HOW RAG WORKS — end to end:
 
@@ -1553,7 +1545,7 @@ results = col.query(query_texts=["how does context work?"], n_results=2)
 print(results["documents"])  # attention doc comes first</div>`,
 pr:{m:'db',l:'sql'},nx:{m:'db',l:'nosql'}},
 
-'db:nosql':{ey:'Module 03 · Databases & AI Memory',ti:'NoSQL: When Relational Does Not Fit',sub:'Document databases and why AI application backends use them.',
+'db:nosql':{ey:'Module 03 · Databases &amp; AI Memory',ti:'NoSQL: When Relational Does Not Fit',sub:'Document databases and why AI application backends use them.',
 bd:`<p>Relational databases excel with fixed, predictable structures. LLM outputs are flexible. Chat histories are nested. Document databases store JSON-like objects where each record can have different fields.</p>
 <div class="cd">USE RELATIONAL (SQL) WHEN:
   Data has fixed, consistent structure
@@ -1581,7 +1573,7 @@ SQLITE AS JSON STORE:
             (1, "2026-08-14", json.dumps(req), json.dumps(resp)))</div>`,
 pr:{m:'db',l:'vector'},nx:{m:'db',l:'design'}},
 
-'db:design':{ey:'Module 03 · Databases & AI Memory',ti:'Schema Design & Normalization',sub:'Good design: no redundancy, fast queries, structure matching usage.',
+'db:design':{ey:'Module 03 · Databases &amp; AI Memory',ti:'Schema Design & Normalization',sub:'Good design: no redundancy, fast queries, structure matching usage.',
 bd:`<p>Good database design means no redundancy (normalization), fast queries (indexes), and structure matching how you actually use the data.</p>
 <div class="cd">NORMALIZATION — removing redundancy:
 
@@ -1605,7 +1597,7 @@ INDEXES — making search fast:
   -- Now WHERE week = 3 is fast even with 1M rows</div>`,
 pr:{m:'db',l:'nosql'},nx:{m:'db',l:'memory'}},
 
-'db:memory':{ey:'Module 03 · Databases & AI Memory',ti:'AI Long-Term Memory Patterns',sub:'LLMs are stateless — here is how to give them persistence.',
+'db:memory':{ey:'Module 03 · Databases &amp; AI Memory',ti:'AI Long-Term Memory Patterns',sub:'LLMs are stateless — here is how to give them persistence.',
 bd:`<p>LLMs remember nothing between sessions. Long-term memory requires external storage. The pattern: store knowledge externally, retrieve it at query time, inject it into the prompt.</p>
 <div class="cd">THREE ARCHITECTURES:
 
@@ -1627,9 +1619,9 @@ YOUR PROJECTS:
   Kairos + Notion OKRs   → Strategy 3 (retrieved at planning time)
   ai-operating-system    → Strategy 1+3 hybrid</div>
 <div class="co bl"><div class="cl2 bl">🔗 The Key Insight</div>Every AI product that feels personalized has a database behind it. Memory is architecture, not magic.</div>`,
-pr:{m:'db',l:'design'},nx:{m:'sys',l:'design'}},
+pr:{m:'db',l:'design'},nx:{m:'f',l:'intro'}},
 
-'sys:design':{ey:'Module 10 · Systems & Cloud',ti:'Systems Design Thinking',sub:'What breaks first at scale — and the components every AI backend uses.',
+'sys:design':{ey:'Module 10 · Systems &amp; Cloud',ti:'Systems Design Thinking',sub:'What breaks first at scale — and the components every AI backend uses.',
 bd:`<p>Systems design is planning how a system handles real-world scale and failure. Core question: what breaks first? How does this handle 1,000 users? 1 million?</p>
 <div class="cd">CORE COMPONENTS OF ANY AI BACKEND:
   CLIENT        Browser, mobile app, another service
@@ -1652,9 +1644,9 @@ QUESTIONS FOR EVERY AI FEATURE:
   Latency budget: how long can a user wait?
   Failure mode: what happens if the AI API is down?
   Cost ceiling: maximum acceptable monthly AI spend?</div>`,
-pr:{m:'db',l:'memory'},nx:{m:'sys',l:'api'}},
+pr:{m:'ma',l:'costs'},nx:{m:'sys',l:'api'}},
 
-'sys:api':{ey:'Module 10 · Systems & Cloud',ti:'Building REST APIs with FastAPI',sub:'Expose your AI pipeline as a web service anything can call.',
+'sys:api':{ey:'Module 10 · Systems &amp; Cloud',ti:'Building REST APIs with FastAPI',sub:'Expose your AI pipeline as a web service anything can call.',
 bd:`<p>A REST API turns your local AI pipeline into a service that any application can call over HTTP. FastAPI is the fastest way to build one in Python.</p>
 <div class="cd">pip install fastapi uvicorn pydantic
 
@@ -1684,7 +1676,7 @@ def health(): return {"status": "ok"}
 # Docs: http://localhost:8000/docs  (auto-generated!)</div>`,
 pr:{m:'sys',l:'design'},nx:{m:'sys',l:'cloud'}},
 
-'sys:cloud':{ey:'Module 10 · Systems & Cloud',ti:'Cloud Deployment',sub:'From localhost to a public URL anyone can call.',
+'sys:cloud':{ey:'Module 10 · Systems &amp; Cloud',ti:'Cloud Deployment',sub:'From localhost to a public URL anyone can call.',
 bd:`<p>The cloud is someone else's computer — with instant scalability and pay-per-use pricing. For an AI application you need compute (run code), storage (store data), and networking (reach the internet).</p>
 <div class="cd">DEPLOYMENT OPTIONS FOR FASTAPI:
 
@@ -1709,7 +1701,7 @@ DEPLOYMENT CHECKLIST:
 <div class="co gr"><div class="cl2 gr">✓ The Test</div>Push to GitHub. Watch Railway deploy automatically. Call your endpoint with curl from your terminal. See your AI pipeline respond from the cloud. That is a real product.</div>`,
 pr:{m:'sys',l:'api'},nx:{m:'sys',l:'async'}},
 
-'sys:async':{ey:'Module 10 · Systems & Cloud',ti:'Async Programming',sub:'Why waiting for one AI call is unnecessary when you need ten answers.',
+'sys:async':{ey:'Module 10 · Systems &amp; Cloud',ti:'Async Programming',sub:'Why waiting for one AI call is unnecessary when you need ten answers.',
 bd:`<p>LLM API calls take 1-3 seconds. 10 sequential calls = 10-30 seconds. 10 concurrent async calls = still 1-3 seconds. Async is the difference between a product that feels fast and one that feels broken.</p>
 <div class="cd">import asyncio, anthropic
 
@@ -1738,7 +1730,7 @@ results = asyncio.run(classify_all(queries))  # 2s not 10s
 # gather = "run all of these concurrently, collect results"</div>`,
 pr:{m:'sys',l:'cloud'},nx:{m:'sys',l:'logging'}},
 
-'sys:logging':{ey:'Module 10 · Systems & Cloud',ti:'Logging & Observability',sub:'You cannot improve what you cannot see — log everything AI does.',
+'sys:logging':{ey:'Module 10 · Systems &amp; Cloud',ti:'Logging & Observability',sub:'You cannot improve what you cannot see — log everything AI does.',
 bd:`<p>In production you will not be watching your code run. Logging is how you know what happened, what went wrong, and how to fix it. For AI systems, observability is especially critical because failures are often subtle wrong outputs, not crashes.</p>
 <div class="cd">import logging, json
 from datetime import datetime
@@ -1775,7 +1767,7 @@ log_llm_call(
 # Token cost > $10/hour → runaway agent</div>`,
 pr:{m:'sys',l:'async'},nx:{m:'sec',l:'owasp'}},
 
-'sec:owasp':{ey:'Module 11 · Security & Ethics',ti:'OWASP Top 10',sub:'The vulnerabilities causing most real-world breaches — your app is exposed to all of them.',
+'sec:owasp':{ey:'Module 11 · Security &amp; Ethics',ti:'OWASP Top 10',sub:'The vulnerabilities causing most real-world breaches — your app is exposed to all of them.',
 bd:`<p>OWASP publishes the 10 most critical security risks for web applications. These are actual vulnerabilities in breaches happening every week — not theory.</p>
 <div class="cd">MOST RELEVANT TO AI APPS:
 
@@ -1802,7 +1794,7 @@ bd:`<p>OWASP publishes the 10 most critical security risks for web applications.
 <div class="co rd"><div class="cl2 rd">⚠️ Do Today</div>Review your FastAPI app. You almost certainly have at least two issues: no input length validation and no rate limiting. Add both before deploying.</div>`,
 pr:{m:'sys',l:'logging'},nx:{m:'sec',l:'injection'}},
 
-'sec:injection':{ey:'Module 11 · Security & Ethics',ti:'Prompt Injection',sub:'What SQL injection was to 2000s web apps — except it hijacks AI agents.',
+'sec:injection':{ey:'Module 11 · Security &amp; Ethics',ti:'Prompt Injection',sub:'What SQL injection was to 2000s web apps — except it hijacks AI agents.',
 bd:`<p>Prompt injection is a new class of vulnerability that emerged with AI. As agents are deployed everywhere, it becomes more dangerous.</p>
 <div class="cd">DIRECT PROMPT INJECTION:
   Your system prompt:
@@ -1830,7 +1822,7 @@ DEFENSES:
 TEST: try to inject your own agent. How hard is it to bypass?</div>`,
 pr:{m:'sec',l:'owasp'},nx:{m:'sec',l:'auth'}},
 
-'sec:auth':{ey:'Module 11 · Security & Ethics',ti:'Auth & Least Privilege',sub:'Authentication, authorization, and why agents need minimal access.',
+'sec:auth':{ey:'Module 11 · Security &amp; Ethics',ti:'Auth & Least Privilege',sub:'Authentication, authorization, and why agents need minimal access.',
 bd:`<p>Three concepts that prevent the majority of security incidents. Getting them right is architecture, not an afterthought.</p>
 <div class="cd">AUTHENTICATION — who are you?
   Proving identity: API key, password, OAuth token.
@@ -1859,7 +1851,7 @@ THE REPLIT LESSON:
   That one architectural decision would have prevented the wipe.</div>`,
 pr:{m:'sec',l:'injection'},nx:{m:'sec',l:'privacy'}},
 
-'sec:privacy':{ey:'Module 11 · Security & Ethics',ti:'Privacy & GDPR',sub:'What you can and cannot store — and why it matters for AI products.',
+'sec:privacy':{ey:'Module 11 · Security &amp; Ethics',ti:'Privacy & GDPR',sub:'What you can and cannot store — and why it matters for AI products.',
 bd:`<p>Privacy is not just EU law — it is a trust signal. Companies that handle user data well have stronger relationships with users. Companies that handle it poorly face regulatory action, press coverage, and user abandonment.</p>
 <div class="cd">PII — PERSONALLY IDENTIFIABLE INFORMATION:
   Obvious: name, email, phone, address, passport number
@@ -1881,7 +1873,7 @@ FOR YOUR AI APPLICATIONS:
   □ Build a data deletion flow from day one</div>`,
 pr:{m:'sec',l:'auth'},nx:{m:'sec',l:'bias'}},
 
-'sec:bias':{ey:'Module 11 · Security & Ethics',ti:'AI Bias',sub:'Models learn from human history — which includes human inequality.',
+'sec:bias':{ey:'Module 11 · Security &amp; Ethics',ti:'AI Bias',sub:'Models learn from human history — which includes human inequality.',
 bd:`<p>AI models learn from human-generated data that reflects human history, culture, and inequality. A model trained on biased data reproduces those biases — often appearing authoritative and objective while doing so.</p>
 <div class="cd">HOW BIAS ENTERS AI:
 
@@ -1906,7 +1898,7 @@ DETECTION:
   Build disaggregated evaluation into every ML pipeline.</div>`,
 pr:{m:'sec',l:'privacy'},nx:{m:'sec',l:'align'}},
 
-'sec:align':{ey:'Module 11 · Security & Ethics',ti:'AI Alignment & The 3 Governance Questions',sub:'The PM decisions that must be made before shipping any AI feature.',
+'sec:align':{ey:'Module 11 · Security &amp; Ethics',ti:'AI Alignment & The 3 Governance Questions',sub:'The PM decisions that must be made before shipping any AI feature.',
 bd:`<p>Alignment means AI systems pursue goals their designers and users actually want — not a proxy version causing unintended harm. Alignment failures are happening in production right now, not in future hypotheticals.</p>
 <div class="cd">REAL ALIGNMENT FAILURES:
 
@@ -1986,7 +1978,7 @@ THE LEAN LAUNCHPAD LOOP:
   Hypothesis → Riskiest assumption → Cheapest test
   → Run it → Update beliefs → New hypothesis → repeat</div>
 <div class="co bl"><div class="cl2 bl">🔗 Your Glidr Prompt</div>The paragraph you wrote for Jim Hornthal IS this hypothesis template in prose: customer segment, problem, evidence, solution, riskiest assumption. That is a real Lean Launchpad entry. Go validate it.</div>`,
-pr:{m:'ax',l:'buildvbuy'},nx:null}
+pr:{m:'ax',l:'buildvbuy'},nx:{m:'st',l:'value'}}
 
 };
 
@@ -2052,10 +2044,27 @@ function ld(m,l){
 }
 
 
+// DEEP LINKS  #learn?m=py&l=vars
+function route(){
+  const h=location.hash.replace(/^#/,'');
+  if(!h.startsWith('learn'))return false;
+  const q=h.indexOf('?');
+  let m=START.m,l=START.l;
+  if(q>=0){const p=new URLSearchParams(h.slice(q+1));if(p.get('m'))m=p.get('m');if(p.get('l'))l=p.get('l');}
+  if(!L[`${m}:${l}`]){m=START.m;l=START.l;}
+  document.querySelectorAll('.vw').forEach(v=>v.classList.remove('on'));
+  document.querySelectorAll('.nt button').forEach(b=>b.classList.remove('on'));
+  document.getElementById('lv').classList.add('on');
+  document.querySelectorAll('.nt button')[1].classList.add('on');
+  ld(m,l);
+  return true;
+}
+window.addEventListener('hashchange',route);
+
 // INIT
 updP();
 syncSi();
-ld(START.m,START.l);
+if(!route())ld(START.m,START.l);
 
 </script>
 </body>
