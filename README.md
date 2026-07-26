@@ -1,11 +1,10 @@
 # Gonza's AI Study Hub
 
-Live: https://ai-study-hub-weld.vercel.app/
-Deploy: git push origin main → Vercel auto-deploys in ~30s
+Live: https://gonzalovn93.github.io/ai-study-hub/
+Deploy: git push origin main → GitHub Pages rebuilds in ~40s
 
-The same commit also builds https://gonzalovn93.github.io/ai-study-hub/ (GitHub Pages).
-Both hosts serve the identical file. The 70 tasks in the Notion daily study tracker
-currently link to the Pages URL.
+Single host. The Vercel mirror was retired — the site is fully static, so it added
+nothing. The 70 tasks in the Notion daily study tracker link to the Pages URL.
 
 ## Architecture
 
