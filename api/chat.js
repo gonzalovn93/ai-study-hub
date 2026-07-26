@@ -19,17 +19,31 @@ Teaching style — structure answers as:
 4. A PM/builder "so what" — the practical implication.
 Be technically precise, direct, and concise. Correct misconceptions immediately. Stay on AI / the curriculum; if asked something far outside it, gently redirect.`;
 
-const MODEL = 'claude-opus-4-8';
+// Sonnet 5 rather than Opus: this is a study tutor on a public URL, and Opus
+// pricing ($5/$25 per MTok) is hard to justify for anything a stranger can
+// trigger. Override with STUDY_MODEL if a specific answer needs more.
+const MODEL = process.env.STUDY_MODEL || 'claude-sonnet-5';
 const MAX_TOKENS = 1024;
 
-// Origin allowlist (browsers enforce CORS; this also gates non-browser callers
-// that honor Origin). Not a hard security boundary on its own — the real
-// backstop is a spend limit on the API key.
+// Optional shared passphrase. Set ACCESS_CODE in Vercel to require it; leave
+// it unset and the endpoint behaves exactly as before. This is the only
+// control here that actually stops a non-browser caller — Origin is a request
+// header and anyone can forge it, so the allowlist below only shapes browser
+// behaviour. It is not cryptographic: the frontend is a public static page,
+// so treat it as a lock on the door, not a vault.
+const ACCESS_CODE = process.env.ACCESS_CODE || '';
+
+// Origin allowlist. The previous version accepted ANY *.vercel.app host, which
+// let every Vercel deployment on the internet through; now only this project's
+// own preview domains are allowed.
 const ALLOWED_ORIGINS = ['https://gonzalovn93.github.io'];
 function originAllowed(o) {
   if (!o) return false;
   if (ALLOWED_ORIGINS.includes(o)) return true;
-  try { return new URL(o).hostname.endsWith('.vercel.app'); } catch { return false; }
+  try {
+    const h = new URL(o).hostname;
+    return /^ai-study-hub[a-z0-9-]*\.vercel\.app$/.test(h);
+  } catch { return false; }
 }
 
 // Best-effort in-memory rate limit (per warm instance; resets on cold start and
@@ -53,11 +67,15 @@ export default async function handler(req, res) {
   if (allowed) res.setHeader('Access-Control-Allow-Origin', origin);
   res.setHeader('Vary', 'Origin');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Access-Code');
 
   if (req.method === 'OPTIONS') return res.status(204).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
   if (!allowed) return res.status(403).json({ error: 'Origin not allowed.' });
+
+  if (ACCESS_CODE && req.headers['x-access-code'] !== ACCESS_CODE) {
+    return res.status(401).json({ error: 'Access code required.' });
+  }
 
   const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'unknown';
   if (rateLimited(ip)) return res.status(429).json({ error: 'Rate limit reached — give it a minute.' });
@@ -88,8 +106,11 @@ export default async function handler(req, res) {
       .trim();
     return res.status(200).json({ text: text || '(no response)' });
   } catch (e) {
+    // Log the real error server-side; don't hand internals (billing state,
+    // request ids, key hints) to an anonymous caller.
+    console.error('[api/chat]', (e && e.status) || '', (e && e.message) || e);
     const status = (e && e.status) || 500;
     return res.status(status >= 400 && status < 600 ? status : 500)
-      .json({ error: 'Tutor request failed.', detail: String((e && e.message) || e) });
+      .json({ error: 'Tutor request failed.' });
   }
 }
