@@ -38,14 +38,13 @@ footer button to toggle a lesson done.
 | M13B | The Data Flywheel | Oct 4–5 | Study_M13B_Data_Flywheel.pdf |
 
 PDFs are topic-scoped and uploaded to a single NotebookLM notebook. Zero overlap between files.
-They live in `C:\Users\gonza\Tech Learning\` and `C:\Users\gonza\AI learning\Final_Course\`.
-
-Four PDFs in the table above have not been generated yet: **M06, M08, M09B, M13B**. Their
-material currently sits inside the M05, M07, M09 and M12/M13 files respectively, so those
-four still overlap until the new ones are cut.
+All 14 live in `C:\Users\gonza\AI learning\` — that folder is the source of truth.
 
 The Learn sidebar also carries a **Bridge — AI Orientation before M04** section (what AI is,
 the three waves, the data pipeline). It is Day 7 of M03 and ships inside the M03 PDF.
+
+`dl:depth` ("Depth, Scale & Emergence") sits in M06, not M05 — it is scaling/emergence
+material, so the site matches the PDF split.
 
 ## How to add a lesson
 

@@ -248,12 +248,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
     <div class="ss">M05 · Neural Networks</div>
     <div class="si" data-k="dl:neural" onclick="ld('dl','neural')">Neural Networks</div>
     <div class="si" data-k="dl:backprop" onclick="ld('dl','backprop')">Backpropagation</div>
-    <div class="si" data-k="dl:depth" onclick="ld('dl','depth')">Depth, Scale &amp; Emergence</div>
     <div class="si" data-k="dl:rules" onclick="ld('dl','rules')">Rules-Based vs Deep Learning</div>
     <div class="ss">M06 · Transformers &amp; Attention</div>
     <div class="si" data-k="tr:tok" onclick="ld('tr','tok')">Day 1 &middot; Tokenization</div>
     <div class="si" data-k="tr:embed" onclick="ld('tr','embed')">Day 1 &middot; Word Embeddings</div>
     <div class="si" data-k="tr:attention" onclick="ld('tr','attention')">⚡ Attention Mechanism</div>
+    <div class="si" data-k="dl:depth" onclick="ld('dl','depth')">Depth, Scale &amp; Emergence</div>
     <div class="si" data-k="tr:scale" onclick="ld('tr','scale')">Scaling Laws &amp; Emergence</div>
     <div class="ss">M07 · LLMs In Depth</div>
     <div class="si" data-k="llm:how" onclick="ld('llm','how')">How LLMs Work</div>
@@ -570,9 +570,9 @@ bd:`<p>Backpropagation is why deep learning is trainable. It efficiently compute
 <p>After computing the loss, backprop asks for every weight: "if I increase this weight slightly, does the loss go up or down — and by how much?" This is the gradient. The chain rule lets each layer's gradients be computed from the layer ahead of it, so the computation flows backward efficiently. Without backprop, you'd need to compute each weight's gradient independently — computationally impossible at scale.</p>
 <h3>The Vanishing Gradient Problem</h3>
 <div class="co rd"><div class="cl2 rd">🚨 Historical Challenge</div>As gradients backpropagate through many layers, they can shrink exponentially. By the time they reach early layers, the gradient is nearly zero — those layers barely update and learn nothing.<br><br><strong>Solutions:</strong><br>• ReLU activations — don't squash gradients like sigmoid/tanh do<br>• Residual connections (ResNet) — shortcuts let gradients skip layers directly<br>• Batch normalization — normalizes layer inputs to prevent gradient explosion/vanishing<br><br>These solutions unlocked genuinely deep networks (100+ layers) starting ~2015.</div>`,
-pr:{m:'dl',l:'neural'},nx:{m:'dl',l:'depth'}},
+pr:{m:'dl',l:'neural'},nx:{m:'dl',l:'rules'}},
 
-'dl:depth':{ey:'Module 05 · Neural Networks',ti:'Depth, Scale & Emergence',sub:'Why bigger models get qualitatively new capabilities — and the Scaling Laws that make this predictable.',
+'dl:depth':{ey:'Module 06 · Transformers &amp; Attention',ti:'Depth, Scale & Emergence',sub:'Why bigger models get qualitatively new capabilities — and the Scaling Laws that make this predictable.',
 bd:`<p>One of the most surprising discoveries in modern AI: scaling models (more parameters, more data, more compute) doesn't just make them quantitatively better — at certain scale thresholds, entirely new capabilities appear that nobody explicitly trained. This is emergence.</p>
 <div class="co bl"><div class="cl2 bl">🎯 The NLP Moore's Law (from AI/DS Strategy notes)</div>LLM model sizes grew ~10× per year since 2018:<br>ELMo (2018): 94M params → BERT-Large: 340M → GPT-2: 1.5B → GPT-3: 175B → GPT-4: ~1T<br><br>Frontier models approaching $1B training cost by 2027 (from Pepe's Class 3).</div>
 <h3>Scaling Laws (Kaplan et al., OpenAI 2020)</h3>
@@ -593,7 +593,7 @@ bd:`<p>One of the most surprising discoveries in modern AI: scaling models (more
 <div class="fn g">Fine-tuning<br><span style="font-size:9px">~$1K-$1M, domain data, days</span></div>
 </div></div>
 <p>Train once on the internet (expensive, done by labs). Fine-tune cheaply for any domain. This economic structure is what makes foundation models commercially viable and why startups can build on top of GPT/Claude/Gemini without billion-dollar training budgets.</p>`,
-pr:{m:'dl',l:'backprop'},nx:{m:'dl',l:'rules'}},
+pr:{m:'tr',l:'attention'},nx:{m:'tr',l:'scale'}},
 
 'dl:rules':{ey:'Module 05 · Neural Networks',ti:'Rules-Based vs Deep Learning',sub:'Knowing when NOT to use deep learning is as important as knowing when to use it.',
 bd:`<p>From Class 4 (Business AI Foundations): "Rule-Based systems break in complex, noisy environments like image recognition because they cannot account for infinite variations or edge cases."</p>
@@ -607,7 +607,7 @@ bd:`<p>From Class 4 (Business AI Foundations): "Rule-Based systems break in comp
 <h3>World Models — The Next Step (Class 4)</h3>
 <p>From your notes: "While standard models ask 'What happens next?', world models simulate internal environments to ask 'What happens if we do something different?'" This is the shift from prediction to strategic planning. Standard classification asks: "Is this a highlight?" World models ask: "If we change the timestamp threshold to 2 seconds before/after the event, how does that affect detection quality?"</p>
 <div class="co bl"><div class="cl2 bl">🎯 The Pepe Principle (Skeleton & Spark, Class 4)</div>Production AI systems are ~95% deterministic code (the skeleton) + ~5% LLM calls (the spark). Use rules/code wherever the behavior should be predictable and testable. Reserve LLM for the small subset of tasks where code genuinely cannot handle the variation or ambiguity. This isn't a compromise — it's the correct architecture for reliable systems.</div>`,
-pr:{m:'dl',l:'depth'},nx:{m:'tr',l:'tok'}},
+pr:{m:'dl',l:'backprop'},nx:{m:'tr',l:'tok'}},
 
 'tr:attention':{ey:'Module 06 · Transformers &amp; Attention',ti:'The Attention Mechanism',sub:'"Attention Is All You Need" (Vaswani et al., Google 2017) — the paper that changed everything.',
 bd:`<p>Before 2017, language models processed text sequentially — left to right, with limited memory of early context. Attention solved this fundamentally: every token can simultaneously look at every other token in the sequence.</p>
@@ -638,7 +638,7 @@ bd:`<p>Before 2017, language models processed text sequentially — left to righ
 <tr><td>Can't parallelize → slow training</td><td>Parallelizes perfectly → enables internet-scale training</td></tr>
 <tr><td>Context degraded past ~100-200 tokens</td><td>200K–10M token context windows (2026)</td></tr>
 </tbody></table>`,
-pr:{m:'tr',l:'embed'},nx:{m:'tr',l:'scale'}},
+pr:{m:'tr',l:'embed'},nx:{m:'dl',l:'depth'}},
 
 'tr:embed':{ey:'Module 06 · Transformers &amp; Attention',ti:'Word Embeddings',sub:'How meaning becomes geometry — the mathematical representation of semantic relationships.',
 bd:`<p>Embeddings are the bridge between human language (symbolic) and neural networks (numerical). They map tokens into high-dimensional vector spaces where semantic relationships become geometric operations.</p>
@@ -690,7 +690,7 @@ bd:`<p>Scaling laws are one of the most practically important discoveries in AI.
 <h3>Inference-Time Compute: The 2024-2026 Revolution</h3>
 <p>After Chinchilla, research found another dimension to scale: <strong>compute at inference time</strong>. Instead of giving a model more parameters or training data, let it "think longer" before answering. OpenAI's o1 model (late 2024) demonstrated dramatically improved reasoning on hard problems by sampling many reasoning paths and selecting the best.</p>
 <div class="co bl"><div class="cl2 bl">⚡ Thinking Models</div>From Pepe's Class 3: "o1 / Claude extended thinking / Plan mode — models reason internally before committing; catches intent without user correction."<br><br>This is inference-time scaling: the model runs chain-of-thought reasoning internally before producing output. More compute at inference = better answers on hard problems. The tradeoff: significantly higher cost per query and latency. Best for complex reasoning tasks where accuracy matters more than speed.</div>`,
-pr:{m:'tr',l:'attention'},nx:{m:'llm',l:'how'}},
+pr:{m:'dl',l:'depth'},nx:{m:'llm',l:'how'}},
 
 'llm:how':{ey:'Module 07 · LLMs In Depth',ti:'How LLMs Work',sub:'Next-token prediction, autoregressive generation, and why "stochastic" changes everything about how you build with them.',
 bd:`<p>At its most fundamental level, an LLM does one thing: predicts the next token. Everything else — coding, reasoning, translation, creative writing — emerges from doing this very well at very large scale.</p>
