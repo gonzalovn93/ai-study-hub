@@ -2,8 +2,6 @@
   "name": "ai-study-hub",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "dependencies": {
-    "@anthropic-ai/sdk": "latest"
-  }
+  "description": "Static AI curriculum study hub. No backend, no API calls, no keys.",
+  "type": "module"
 }

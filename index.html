@@ -112,30 +112,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 .btn.s{background:transparent;color:var(--dm)}
 .btn.s:hover{border-color:var(--ac);color:var(--ac)}
 .btn:disabled{opacity:.4;cursor:not-allowed}
-#cv{display:flex;flex-direction:column;height:calc(100vh - 56px);max-width:720px;margin:0 auto;padding:0 20px}
-.ch2{padding:18px 0 12px;border-bottom:1px solid var(--bd);margin-bottom:10px}
-.ch2 h2{font-size:17px;margin-bottom:3px}
-.ch2 p{font-size:11px;color:var(--dm)}
-.ms{flex:1;overflow-y:auto;padding:10px 0;display:flex;flex-direction:column;gap:12px}
-.msg{display:flex;gap:9px;max-width:640px}
-.msg.u{align-self:flex-end;flex-direction:row-reverse}
-.av{width:28px;height:28px;border-radius:50%;background:var(--ac);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
-.msg.u .av{background:var(--s2)}
-.bub{background:var(--s1);border:1px solid var(--bd);border-radius:9px;padding:11px 14px;font-size:13px;line-height:1.6;max-width:520px}
-.msg.u .bub{background:rgba(108,99,255,.12);border-color:rgba(108,99,255,.2)}
-.ci{padding:12px 0 18px;border-top:1px solid var(--bd)}
-.ir{display:flex;gap:6px;margin-bottom:7px}
-.ti{flex:1;background:var(--s1);border:1px solid var(--bd);border-radius:7px;padding:10px 12px;font-size:13px;font-family:var(--ss);color:var(--tx);resize:none;height:42px;transition:border-color .15s}
-.ti:focus{outline:none;border-color:var(--ac)}
-.ts{width:42px;height:42px;background:var(--ac);border:none;border-radius:7px;cursor:pointer;font-size:15px;transition:background .15s;display:flex;align-items:center;justify-content:center;color:white}
-.ts:hover{background:#7c74ff}
-.sg2{display:flex;flex-wrap:wrap;gap:5px}
-.sg2 button{padding:4px 10px;border-radius:13px;font-size:11px;border:1px solid var(--bd);color:var(--mt);cursor:pointer;background:transparent;font-family:var(--ss);transition:all .15s}
-.sg2 button:hover{border-color:var(--ac);color:var(--ac)}
-.tyd{display:flex;gap:3px;padding:3px 0}
-.dot{width:5px;height:5px;background:var(--mt);border-radius:50%;animation:bc 1s infinite}
-.dot:nth-child(2){animation-delay:.15s}.dot:nth-child(3){animation-delay:.3s}
-@keyframes bc{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--bd);border-radius:2px}
 @media(max-width:700px){#lv{flex-direction:column}.sb{width:100%;max-height:160px;border-right:none;border-bottom:1px solid var(--bd)}.lc{padding:20px}.hg{grid-template-columns:1fr 1fr}.pr{grid-template-columns:1fr}}
 
@@ -174,7 +150,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
     <button onclick="sw('l',this)">📖 Learn</button>
     <button onclick="sw('q',this)">🎯 Quiz</button>
     <button onclick="sw('p',this)">📅 Plan</button>
-    <button onclick="sw('c',this)">💬 Ask</button>
   </div>
   <div class="nr">
     <span id="pt">0/38 done</span>
@@ -191,12 +166,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 </div>
 <div class="hw">
   <h3>How to use this hub → one loop</h3>
-  <div class="hg" style="grid-template-columns:repeat(5,1fr)">
+  <div class="hg" style="grid-template-columns:repeat(4,1fr)">
     <div class="hs"><div class="n">🗺</div><p><strong>Map</strong> — Full curriculum. Click any card to jump into Learn.</p></div>
     <div class="hs"><div class="n">📖</div><p><strong>Learn</strong> — Every lesson filled with your actual class notes + diagrams. Auto-marks done.</p></div>
     <div class="hs"><div class="n">🎯</div><p><strong>Quiz</strong> — 25 questions from your actual notes. Filter by module. Wrong = fastest learning.</p></div>
     <div class="hs"><div class="n">📅</div><p><strong>Plan</strong> — 10-week daily schedule. Jun 25 – Sep 2, 2026.</p></div>
-    <div class="hs"><div class="n">💬</div><p><strong>Ask</strong> — Claude knows your full curriculum and projects.</p></div>
   </div>
 </div>
 
@@ -531,33 +505,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
   <div id="qcon"></div>
 </div>
 
-<!-- CHAT -->
-<div id="cv" class="vw">
-  <div class="ch2">
-    <h2>Ask Claude — AI Tutor</h2>
-    <p>Seeded with your full Haas notes (Business AI Foundations + Pepe's 4 classes) + your projects + 2026 context. Ask anything.</p>
-  </div>
-  <div class="ms" id="ms">
-    <div class="msg">
-      <div class="av">🤖</div>
-      <div class="bub">Hey Gonzalo. I'm seeded with your full Haas AI curriculum — Business AI Foundations (17 classes), Pepe's 4-class series (Software → ML → LLMs → Multi-Agent), plus your project context (ai-operating-system, Kairos, WhatIfStudios, content-marketing-agent).<br><br>Try:<br>• "Explain attention mechanism visually"<br>• "Why did the asthma/pneumonia model fail in Class 13?"<br>• "How does the ai-operating-system relate to what we learned about agents?"<br>• "Walk me through RAG vs fine-tuning tradeoffs"<br><br>What do you want to nail first?</div>
-    </div>
-  </div>
-  <div class="ci">
-    <div class="ir">
-      <textarea class="ti" id="ti" placeholder="Ask about any AI concept..." onkeydown="ck(event)"></textarea>
-      <button class="ts" onclick="snd()">↑</button>
-    </div>
-    <div class="sg2">
-      <button onclick="ask('Explain the attention mechanism with a clear visual analogy')">Attention mechanism</button>
-      <button onclick="ask('What is RLHF and why does it matter? How does temperature fit in?')">RLHF + temperature</button>
-      <button onclick="ask('How does Skeleton and Spark apply to the content-marketing-agent?')">Skeleton & Spark</button>
-      <button onclick="ask('What are evals and why do PMs need to care about them specifically?')">Evals for PMs</button>
-      <button onclick="ask('Walk me through the AI data flywheel — when does it work and when does it fail?')">Data flywheel</button>
-      <button onclick="ask('What happened with DeepSeek in early 2025 and why did it matter strategically?')">DeepSeek moment</button>
-    </div>
-  </div>
-</div>
 </div>
 
 <script>
@@ -1485,7 +1432,7 @@ bd:`<p>From Class 15: "Focus on slopes, not current positions. Technology advanc
 <h3>Investment Strategy Implication (Class 15)</h3>
 <p>"Avoid building on current AI limitations." Many AI startups founded 2019-2021 are now obsolete — they built products around limitations (context length, hallucination rates, reasoning gaps) that foundation models have since solved. Build for a world where AI capabilities are significantly more advanced than today. Your ai-operating-system and Kairos are good examples: they're built on top of AI's strengths (reasoning, writing, retrieval) rather than working around its weaknesses.</p>`,
 pr:{m:'st',l:'impact'},nx:null},
-,'py:vars':{ey:'Module 10 · Python Basics',ti:'What Is a Program?',sub:'Variables, data types, and the foundational mental model for all of programming.',
+'py:vars':{ey:'Module 10 · Python Basics',ti:'What Is a Program?',sub:'Variables, data types, and the foundational mental model for all of programming.',
 bd:`<p>A program is an exact, unambiguous sequence of instructions a computer follows. The key word is <em>exact</em>. The computer has no intuition — it does precisely what you told it to do. When a program crashes, it is almost always because what you told it to do and what you thought you told it to do were different things.</p>
 <h3>Variables and Data Types</h3>
 <div class="cd">name     = "Gonzalo"    # string
@@ -2266,7 +2213,7 @@ function ld(m,l){
   const k=`${m}:${l}`;
   document.querySelectorAll('.si').forEach(e=>{e.classList.remove('on');if(e.dataset.k===k)e.classList.add('on')});
   const d=L[k];
-  if(!d){document.getElementById('lc').innerHTML=`<div class="ley">${m}:${l}</div><div class="lti">Coming Soon</div><div class="lsu">This lesson is being written. Use the Ask tab to explore this topic with Claude now.</div><div class="lnv"><div></div><button class="lb2 p" onclick="sw('c',document.querySelectorAll('.nt button')[3])">Open Ask →</button></div>`;return;}
+  if(!d){document.getElementById('lc').innerHTML=`<div class="ley">${m}:${l}</div><div class="lti">Coming Soon</div><div class="lsu">This lesson is being written.</div>`;return;}
   const pb=d.pr?`<button class="lb2" onclick="ld('${d.pr.m}','${d.pr.l}')">← Back</button>`:`<div></div>`;
   const nb=d.nx?`<button class="lb2 p" onclick="ld('${d.nx.m}','${d.nx.l}')">Next →</button>`:`<button class="lb2 p" onclick="mkd('${k}')">✓ Mark Complete</button>`;
   document.getElementById('lc').innerHTML=`<div class="ley">${d.ey}</div><div class="lti">${d.ti}</div><div class="lsu">${d.sub}</div><div class="lb">${d.bd}</div><div class="lnv">${pb}${nb}</div>`;
@@ -2345,56 +2292,6 @@ function pk(i){
 }
 function nq(){qi++;rq();}
 function hint(){const c=fQ[qi%fQ.length];alert(`Hint: "${c.o[c.a].substring(0,40)}..."`);}
-
-// CHAT
-const SYS=`You are Gonzalo's personal AI tutor with full context:
-- Gonzalo: 33yo, Berkeley Haas MBA 2026, AI-native PM, ex-Intuit (QuickBooks onboarding) and Rappi (built RappiAds 0→1, $1M/month LatAm)
-- Completed: Business AI Foundations (17 classes), Pepe's 4-class series (Software → ML → LLMs in Production → Multi-Agent Systems), AI/DS/ML Strategy (3 lectures)
-- Projects built: ai-operating-system (43+ Claude Code workflows, Google Calendar + Notion MCP), WhatIfStudios (AI video pipeline: concept → YouTube via Kling/fal.ai), Kairos (AI OKR system on Notion+Claude), content-marketing-agent (TypeScript multi-agent with human-approval governance), berkeley-optometry-voice (Claude + Whisper + TTS scheduling agent), your AI projects (CV + LLMs for sports highlights), LLM Radar (Next.js, tracks frontier model updates)
-- 2026 context: GPT-5.5, Claude Opus 4.x, Gemini 3.1 (1M context), LLaMA 4 (10M context), DeepSeek moment, agents went mainstream, evals now required PM skill, MCP as "USB for AI"
-
-Teaching style — always structure responses as:
-1. Core insight in one bold sentence
-2. Visual/diagram or code example when it aids understanding
-3. Concrete example from his projects or real industry
-4. PM/Builder "so what" — practical implication
-5. Optional: one follow-up question to go deeper
-
-Be technically precise. Direct. Zero fluff. Correct misconceptions immediately.`;
-
-const hist=[];
-async function snd(){
-  const inp=document.getElementById('ti');
-  const txt=inp.value.trim();if(!txt)return;
-  inp.value='';addM('u',txt);
-  const tid=addTyp();
-  hist.push({role:'user',content:txt});
-  try{
-    const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:SYS,messages:hist})});
-    const d=await r.json();
-    const reply=d.content?.[0]?.text||'Error getting response.';
-    rmTyp(tid);addM('ai',reply);hist.push({role:'assistant',content:reply});
-  }catch(e){
-    rmTyp(tid);
-    addM('ai',`⚠️ The chat API isn't accessible in this embedded artifact environment. For deep-dive questions, use the main Claude chat above with this context:\n\n"I'm Gonzalo, Berkeley Haas MBA, studying AI. I've taken Business AI Foundations (17 classes) and Pepe's 4-class series (Software/ML/LLMs/Multi-Agent). My projects: ai-operating-system, WhatIfStudios, Kairos, content-marketing-agent. My question: [your question]"\n\nAll 38 lessons in the Learn tab work fully offline.`);
-  }
-}
-function addM(r,t){
-  const c=document.getElementById('ms');
-  const d=document.createElement('div');d.className=`msg${r==='u'?' u':''}`;
-  const fmt=t.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/`([^`\n]+)`/g,'<code style="background:var(--s2);padding:1px 5px;border-radius:3px;font-family:var(--mn);font-size:11px">$1</code>').replace(/\n/g,'<br>');
-  d.innerHTML=`<div class="av">${r==='u'?'🧑':'🤖'}</div><div class="bub">${fmt}</div>`;
-  c.appendChild(d);c.scrollTop=c.scrollHeight;
-}
-function addTyp(){
-  const c=document.getElementById('ms'),id='t'+Date.now();
-  const d=document.createElement('div');d.className='msg';d.id=id;
-  d.innerHTML=`<div class="av">🤖</div><div class="bub"><div class="tyd"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>`;
-  c.appendChild(d);c.scrollTop=c.scrollHeight;return id;
-}
-function rmTyp(id){const e=document.getElementById(id);if(e)e.remove();}
-function ask(t){document.getElementById('ti').value=t;snd();}
-function ck(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();snd();}}
 
 // INIT
 updP();
