@@ -145,6 +145,63 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 .dbg.b{background:rgba(107,203,119,.15);color:var(--g)}.dbg.r{background:rgba(255,217,61,.15);color:var(--y)}
 @media(max-width:700px){.wdays{grid-template-columns:repeat(4,1fr)}.pst{grid-template-columns:1fr 1fr}}
 
+/* v5 Model Stack tab */
+:root{--t1:#f59e0b;--t2:#8b5cf6;--t3:#10b981;--t4:#38bdf8}
+#sv{padding:28px 26px;max-width:1060px;margin:0 auto}
+.msh{margin-bottom:20px}
+.msh h2{font-family:var(--dp);font-size:30px;line-height:1.2;margin-bottom:6px}
+.msh h2 span{color:var(--ac)}
+.msh p{font-size:13px;color:var(--dm);max-width:560px;line-height:1.6}
+.mskey{background:var(--s1);border:1px solid var(--bd);border-radius:9px;padding:12px 16px;margin-bottom:18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.mskey .kl{font-family:var(--mn);font-size:10px;color:var(--mt);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
+.mskey input{flex:1;min-width:190px;background:var(--s2);border:1px solid var(--bd);border-radius:7px;padding:8px 12px;color:var(--tx);font-family:var(--mn);font-size:11.5px;outline:none}
+.mskey input:focus{border-color:var(--ac)}
+.mskey .km{flex:1;min-width:150px;font-family:var(--mn);font-size:11.5px;color:var(--g)}
+.mstg{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px;margin-bottom:16px}
+.mst{background:var(--s1);border:1px solid var(--bd);border-radius:9px;padding:11px 13px;cursor:pointer;transition:all .15s;font-size:12.5px;font-weight:500;display:flex;align-items:center;gap:7px;color:var(--tx);font-family:var(--ss);text-align:left}
+.mst:hover{border-color:var(--ac);transform:translateY(-1px)}
+.mst.on{border-color:var(--ac);background:rgba(108,99,255,.12);color:var(--ac)}
+.msb{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap}
+.msb .mn3{font-family:var(--mn);font-size:10px;color:var(--mt)}
+.mse{background:var(--s1);border:1px dashed var(--bd);border-radius:9px;padding:26px 20px;text-align:center;font-size:12.5px;color:var(--dm);line-height:1.6}
+.msl{background:var(--s1);border:1px solid var(--bd);border-radius:9px;padding:20px;font-size:12.5px;color:var(--dm);display:flex;align-items:center;gap:10px}
+.msd{width:8px;height:8px;border-radius:50%;background:var(--ac);animation:msp 1.1s ease-in-out infinite;flex-shrink:0}
+@keyframes msp{0%,100%{opacity:.2}50%{opacity:1}}
+.msx{background:rgba(255,107,107,.07);border:1px solid rgba(255,107,107,.3);border-left:3px solid var(--r);border-radius:7px;padding:13px 16px;font-size:12.5px;line-height:1.6}
+.msx .xl{font-family:var(--mn);font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--r);margin-bottom:5px}
+.msx .xb{margin-bottom:10px;color:var(--dm)}
+.msc{background:var(--s1);border:1px solid var(--bd);border-left:3px solid var(--bd);border-radius:9px;padding:15px 17px;margin-bottom:10px}
+.msc.t1{border-left-color:var(--t1)}.msc.t2{border-left-color:var(--t2)}.msc.t3{border-left-color:var(--t3)}.msc.t4{border-left-color:var(--t4)}
+.mscb{font-family:var(--mn);font-size:9px;padding:2px 7px;border-radius:4px;display:inline-block;margin-bottom:8px}
+.mscb.t1{background:rgba(245,158,11,.14);color:var(--t1)}.mscb.t2{background:rgba(139,92,246,.14);color:var(--t2)}.mscb.t3{background:rgba(16,185,129,.14);color:var(--t3)}.mscb.t4{background:rgba(56,189,248,.14);color:var(--t4)}
+.msct{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.msc h4{font-size:15px;font-weight:600;margin-bottom:2px}
+.msc .pv{font-size:11px;color:var(--dm);font-family:var(--mn);margin-bottom:9px}
+.mscs{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
+.mscs span{padding:2px 7px;border-radius:4px;font-family:var(--mn);font-size:9px;background:var(--s2);color:var(--dm);border:1px solid var(--bd)}
+.msc .wy{font-size:12.5px;line-height:1.65;color:var(--tx);margin-bottom:10px}
+.mscg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.mscg div{border-radius:7px;padding:9px 11px;font-size:11.5px;line-height:1.5;color:var(--dm)}
+.mscg .uw{background:rgba(107,203,119,.07);border-left:2px solid var(--g)}
+.mscg .aw{background:rgba(255,107,107,.07);border-left:2px solid var(--r)}
+.mscg strong{display:block;font-family:var(--mn);font-size:9px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.mscg .uw strong{color:var(--g)}.mscg .aw strong{color:var(--r)}
+.msc a{color:var(--ac);font-size:11.5px;text-decoration:none;font-family:var(--mn)}
+.msc a:hover{text-decoration:underline}
+.mspin{flex-shrink:0;padding:5px 11px;border-radius:14px;font-size:11px;cursor:pointer;border:1px solid var(--bd);background:transparent;color:var(--dm);font-family:var(--ss);transition:all .15s;white-space:nowrap}
+.mspin:hover{border-color:var(--ac);color:var(--ac)}
+.mspin.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.mstip{background:rgba(108,99,255,.08);border-left:3px solid var(--ac);border-radius:0 7px 7px 0;padding:13px 16px;margin-top:14px;font-size:12.5px;line-height:1.65}
+.mstip .tl{font-family:var(--mn);font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ac);margin-bottom:5px}
+.mssrc{font-family:var(--mn);font-size:10px;color:var(--mt);margin-top:10px;line-height:1.5}
+.msbar{position:sticky;bottom:0;background:rgba(19,19,26,.97);backdrop-filter:blur(12px);border:1px solid var(--bd);border-radius:9px;padding:11px 14px;margin-top:26px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.msbar .bl{font-family:var(--mn);font-size:10px;color:var(--mt);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
+.msbar .bc{padding:3px 10px;border-radius:14px;font-size:11px;background:var(--s2);border:1px solid var(--bd);color:var(--tx);cursor:pointer}
+.msbar .bc:hover{border-color:var(--r);color:var(--r)}
+.msbar .be{font-size:11.5px;color:var(--mt)}
+@media(max-width:700px){#sv{padding:22px 16px}.mstg{grid-template-columns:1fr 1fr}.mscg{grid-template-columns:1fr}}
+@media(max-width:560px){.mstg{grid-template-columns:1fr}.msct{flex-direction:column}}
+
 </style>
 </head>
 <body>
@@ -153,6 +210,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
   <div class="nt">
     <button class="on" onclick="sw('m',this)">🗺 Syllabus</button>
     <button onclick="sw('l',this)">📖 Learn</button>
+    <button onclick="sw('s',this)">⚡ Model Stack</button>
   </div>
   <div class="nr">
     <span id="pt">0/38 done</span>
@@ -304,6 +362,24 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
     <div class="si" data-k="f:flywheel" onclick="ld('f','flywheel')">🔁 Data flywheel &amp; strategic moat</div>
   </div>
   <div class="lc" id="lc"></div>
+</div>
+
+<!-- MODEL STACK -->
+<div id="sv" class="vw">
+<div class="msh">
+  <h2>The <span>Model Stack</span></h2>
+  <p>Which AI model is actually best for each job, right now. Pick a task and it searches artificialanalysis.ai and the current benchmark landscape live, then ranks 3–4 models with the tradeoffs. Pin your picks to build your own stack.</p>
+</div>
+
+<div class="mskey" id="msk"></div>
+
+<div class="pl">🎛 Pick a task</div>
+<div class="mstg" id="mstg"></div>
+
+<div class="msb" id="msb"></div>
+<div id="msr"></div>
+
+<div class="msbar" id="msbar"></div>
 </div>
 
 </div>
@@ -1990,10 +2066,11 @@ pr:{m:'ax',l:'buildvbuy'},nx:{m:'st',l:'value'}}
 function sw(id,btn){
   document.querySelectorAll('.vw').forEach(v=>v.classList.remove('on'));
   document.querySelectorAll('.nt button').forEach(b=>b.classList.remove('on'));
-  const m={m:'mv',l:'lv'};
+  const m={m:'mv',l:'lv',s:'sv'};
   document.getElementById(m[id]).classList.add('on');
   btn.classList.add('on');
   if(id==='l'&&!document.getElementById('lc').innerHTML)ld(START.m,START.l);
+  if(id==='s')msInit();
 }
 function jmp(m,l){
   document.querySelectorAll('.vw').forEach(v=>v.classList.remove('on'));
@@ -2047,6 +2124,190 @@ function ld(m,l){
   document.getElementById('lc').scrollTop=0;
 }
 
+
+// ===== MODEL STACK =====
+const MST=[
+{id:'summarize',lb:'Summarize',ic:'📝',ct:'text',ds:'condensing long documents, transcripts and meeting notes into accurate short summaries'},
+{id:'write',lb:'Write',ic:'✍️',ct:'text',ds:'long-form writing, drafting and editing prose that sounds human'},
+{id:'content',lb:'Create Content',ic:'🎯',ct:'text',ds:'social posts, hooks, scripts and marketing copy with a distinct voice'},
+{id:'images',lb:'Generate Images',ic:'🖼',ct:'image',ds:'text-to-image generation for thumbnails, carousels and brand visuals'},
+{id:'audio',lb:'Voice & Audio',ic:'🎙',ct:'audio',ds:'text-to-speech, voice cloning and speech-to-text transcription'},
+{id:'video_gen',lb:'Generate Video',ic:'🎬',ct:'video',ds:'text-to-video and image-to-video generation for short-form clips'},
+{id:'video_edit',lb:'Edit Video',ic:'✂️',ct:'video',ds:'AI-assisted video editing, auto-cutting, captions and highlight detection'},
+{id:'code',lb:'Build Software',ic:'💻',ct:'code',ds:'writing, refactoring and debugging real production code in an agentic loop'},
+{id:'ai_ml',lb:'AI/ML Systems',ic:'🤖',ct:'code',ds:'building agents, RAG pipelines, evals and multi-step AI systems'},
+{id:'learn',lb:'Study & Learn',ic:'📚',ct:'text',ds:'explaining hard technical concepts, tutoring and building study material'}];
+const MSTIER={best_overall:['t1','⭐ Best Overall'],best_quality:['t2','🏆 Top Quality'],best_value:['t3','💰 Best Value'],fastest:['t4','⚡ Fastest']};
+let msSel=null,msCache={},msPins={},msBusy=false,msBooted=false;
+
+function msEsc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function msKey(){return localStorage.getItem('anthropic_api_key')||'';}
+
+function msInit(){
+  if(msBooted)return;msBooted=true;
+  document.getElementById('mstg').innerHTML=MST.map(t=>`<button class="mst" id="mst-${t.id}" onclick="msPick('${t.id}')">${t.ic} ${t.lb}</button>`).join('');
+  msKeyBar();msBar();msStack();
+  document.getElementById('msr').innerHTML=`<div class="mse">Select a task above, then click Analyze to fetch live rankings from artificialanalysis.ai.</div>`;
+}
+function msKeyBar(){
+  const k=msKey(),e=document.getElementById('msk');
+  if(k){e.innerHTML=`<span class="kl">🔑 API key</span><span class="km">${msEsc(k.slice(0,10))}…${msEsc(k.slice(-4))}</span><button class="btn s" onclick="msClearKey()">Change</button>`;}
+  else{e.innerHTML=`<span class="kl">🔑 Anthropic API key</span><input id="mski" type="password" placeholder="sk-ant-…" autocomplete="off" onkeydown="if(event.key==='Enter')msSaveKey()"><button class="btn p" onclick="msSaveKey()">Save</button>`;}
+  msBar();
+}
+function msSaveKey(){
+  const v=document.getElementById('mski').value.trim();
+  if(!v)return;
+  localStorage.setItem('anthropic_api_key',v);msKeyBar();
+}
+function msClearKey(){localStorage.removeItem('anthropic_api_key');msKeyBar();}
+
+function msBar(){
+  const e=document.getElementById('msb');if(!e)return;
+  if(!msSel){e.innerHTML='';return;}
+  const t=MST.find(x=>x.id===msSel),k=msKey(),has=!!msCache[msSel];
+  e.innerHTML=`<button class="btn p" id="msgo" onclick="msAnalyze()" ${k&&!msBusy?'':'disabled'}>${has?'↻ Refresh':'⚡ Analyze'}</button>`
+    +`<span class="mn3">${!k?'Add API key above':msBusy?'Searching…':msEsc(t.lb)}</span>`;
+}
+function msPick(id){
+  msSel=id;
+  document.querySelectorAll('.mst').forEach(b=>b.classList.remove('on'));
+  document.getElementById('mst-'+id).classList.add('on');
+  msBar();
+  if(msCache[id])msRender(msCache[id]);
+  else document.getElementById('msr').innerHTML=`<div class="mse">Click <strong>Analyze</strong> to fetch live rankings for ${msEsc(MST.find(t=>t.id===id).lb)}.</div>`;
+}
+
+async function analyzeTask(taskId,taskLabel,taskDesc,taskCat){
+  const apiKey=msKey();
+  if(!apiKey)throw new Error('No API key. Add your Anthropic API key above.');
+  const hints={
+    text:'Search artificialanalysis.ai for their quality index leaderboard and current LLM rankings.',
+    image:'Search for the best image generation AI right now: Midjourney, Flux, Ideogram, Imagen, GPT Image, Firefly.',
+    audio:'Search for the best voice AI right now: ElevenLabs, Whisper, Deepgram, AssemblyAI, Cartesia, Google.',
+    video:'Search for the best AI video generation right now: Sora, Runway, Kling, Luma, Veo, Hailuo, Pika.',
+    code:'Search artificialanalysis.ai coding benchmarks, SWE-bench and Terminal-bench rankings.'};
+  const prompt=`You are an elite AI model benchmarking analyst. Find the best AI models/tools for "${taskLabel}" (${taskDesc}) as of today.
+
+${hints[taskCat]||hints.text}
+
+Context: the user is a PM/founder who runs an AI Operating System (Python, Notion-integrated) and values real-world performance over leaderboard trivia. His stack leans on Claude, but he wants to know exactly when to switch.
+
+Return ONLY raw valid JSON — no markdown, no backticks, no text outside the JSON:
+
+{"task":"${taskLabel}","models":[{"name":"Exact Model Name","provider":"Company Name","tier":"best_overall","score_label":"92/100","speed_label":"~60 tok/s","cost_label":"$3/1M tokens","context_label":"200K ctx","why_best":"One concrete sentence on why this model leads for this specific task.","use_when":"Most appropriate scenario","avoid_when":"When another model would outperform this","url":"https://..."}],"gonzalo_tip":"One sharp tip connecting the best pick to his AI-OS or PM workflow.","source":"Sources consulted"}
+
+Include 3-4 models. tier must be one of: best_overall, best_quality, best_value, fastest. No repeated tiers. Every field must be filled with a real value — never leave one blank.`;
+
+  // Each web search adds ~8s. Cap the searches and hard-stop the request so a
+  // stalled turn can't leave the panel spinning forever.
+  const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),150000);
+  let res;
+  try{
+    res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',signal:ctl.signal,
+      headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({
+        model:'claude-sonnet-5',
+        max_tokens:8000,
+        output_config:{effort:'medium'},
+        tools:[{type:'web_search_20260209',name:'web_search',max_uses:3}],
+        system:'You are an AI model benchmarking expert. Search the web for current data before answering. Keep searches focused — at most 3. Return ONLY raw valid JSON — no markdown, no backticks, no preamble.',
+        messages:[{role:'user',content:prompt}]})});
+  }catch(e){
+    if(e.name==='AbortError')throw new Error('Timed out after 150s — the search took too long. Try again.');
+    throw new Error('Network error reaching the Anthropic API. Check your connection.');
+  }finally{clearTimeout(timer);}
+
+  if(!res.ok){
+    let m='';try{const j=await res.json();m=j&&j.error&&j.error.message;}catch(e){}
+    if(res.status===401)m=m||'Invalid API key.';
+    if(res.status===429)m=m||'Rate limited — wait a moment and retry.';
+    if(res.status===400&&/credit|balance/i.test(m||''))m='Your Anthropic account is out of API credits (separate from a Claude subscription).';
+    throw new Error(m||`API error ${res.status}`);
+  }
+  const data=await res.json();
+  if(data.stop_reason==='refusal')throw new Error('The model declined this request. Try another task.');
+  const texts=(data.content||[]).filter(b=>b.type==='text').map(b=>b.text).filter(Boolean);
+  for(let i=texts.length-1;i>=0;i--){
+    const m=texts[i].match(/\{[\s\S]*\}/);
+    if(!m)continue;
+    try{const p=JSON.parse(m[0]);if(p&&Array.isArray(p.models)&&p.models.length)return p;}catch(e){}
+  }
+  if(data.stop_reason==='max_tokens')throw new Error('Response was cut off before it finished. Try again.');
+  throw new Error('Response did not contain parseable JSON. Try again.');
+}
+
+async function msAnalyze(){
+  if(msBusy||!msSel)return;
+  const t=MST.find(x=>x.id===msSel);
+  msBusy=true;
+  const go=document.getElementById('msgo');if(go)go.disabled=true;
+  msBar();
+  document.getElementById('msr').innerHTML=`<div class="msl"><span class="msd"></span>Scanning artificialanalysis.ai for ${msEsc(t.lb)}… <span class="mn3">(live web search, ~60–90s)</span></div>`;
+  try{
+    const d=await analyzeTask(t.id,t.lb,t.ds,t.ct);
+    msCache[t.id]=d;
+    if(msSel===t.id)msRender(d);
+  }catch(e){
+    if(msSel===t.id)document.getElementById('msr').innerHTML=`<div class="msx"><div class="xl">⚠ Analysis failed</div><div class="xb">${msEsc(e.message)}</div><button class="btn s" onclick="msAnalyze()">Retry</button></div>`;
+  }finally{
+    msBusy=false;msBar();
+  }
+}
+
+function msRender(d){
+  const cards=(d.models||[]).map((m,i)=>{
+    const tr=MSTIER[m.tier]||['t1','⭐ Ranked'],pinned=msPins[msSel]&&msPins[msSel].name===m.name;
+    const stats=[m.score_label,m.speed_label,m.cost_label,m.context_label].filter(Boolean)
+      .map(s=>`<span>${msEsc(s)}</span>`).join('');
+    const link=m.url?`<a href="${msEsc(m.url)}" target="_blank" rel="noopener">${msEsc(m.name)} ↗</a>`:'';
+    return `<div class="msc ${tr[0]}">
+      <div class="mscb ${tr[0]}">${tr[1]}</div>
+      <div class="msct"><div><h4>${msEsc(m.name)}</h4><div class="pv">${msEsc(m.provider)}</div></div>
+      <button class="mspin${pinned?' on':''}" onclick="msPin(${i})">${pinned?'📌 Pinned':'📌 Pin'}</button></div>
+      <div class="mscs">${stats}</div>
+      <div class="wy">${msEsc(m.why_best)}</div>
+      <div class="mscg">
+        <div class="uw"><strong>✓ Use when</strong>${msEsc(m.use_when)}</div>
+        <div class="aw"><strong>✕ Avoid when</strong>${msEsc(m.avoid_when)}</div>
+      </div>${link}</div>`;}).join('');
+  const tip=d.gonzalo_tip?`<div class="mstip"><div class="tl">🎯 AI-OS Tip</div>${msEsc(d.gonzalo_tip)}</div>`:'';
+  const src=d.source?`<div class="mssrc">Sources: ${msEsc(d.source)}</div>`:'';
+  document.getElementById('msr').innerHTML=cards+tip+src;
+}
+
+function msPin(i){
+  const d=msCache[msSel];if(!d)return;
+  const m=d.models[i];
+  if(msPins[msSel]&&msPins[msSel].name===m.name)delete msPins[msSel];
+  else msPins[msSel]={name:m.name,provider:m.provider,tier:m.tier};
+  msRender(d);msStack();
+}
+function msStack(){
+  const e=document.getElementById('msbar');if(!e)return;
+  const ids=MST.map(t=>t.id).filter(id=>msPins[id]);
+  if(!ids.length){e.innerHTML=`<span class="bl">📌 My Stack</span><span class="be">Pin a model on any card to start building your stack.</span>`;return;}
+  e.innerHTML=`<span class="bl">📌 My Stack</span>`
+    +ids.map(id=>{const t=MST.find(x=>x.id===id);
+      return `<span class="bc" title="Click to unpin" onclick="msUnpin('${id}')">${t.ic} ${msEsc(t.lb)}: ${msEsc(msPins[id].name)}</span>`;}).join('')
+    +`<button class="btn s" onclick="msCopy(this)">Copy ↗</button>`;
+}
+function msUnpin(id){delete msPins[id];msStack();if(msSel===id&&msCache[id])msRender(msCache[id]);}
+function msCopy(btn){
+  const ids=MST.map(t=>t.id).filter(id=>msPins[id]);
+  const dt=new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+  const txt=`# My AI Stack — ${dt}\n\n`+ids.map(id=>{
+    const t=MST.find(x=>x.id===id),p=msPins[id],tr=MSTIER[p.tier];
+    return `${t.lb}: ${p.name} (${p.provider})${tr?' — '+tr[1].replace(/^\S+\s/,''):''}`;}).join('\n')+'\n';
+  const done=()=>{btn.textContent='✓ Copied';setTimeout(()=>{btn.textContent='Copy ↗';},1600);};
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(done,()=>msCopyFallback(txt,done));
+  else msCopyFallback(txt,done);
+}
+function msCopyFallback(txt,done){
+  const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done();}catch(e){}ta.remove();
+}
 
 // DEEP LINKS  #learn?m=py&l=vars
 function route(){
