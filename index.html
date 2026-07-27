@@ -199,8 +199,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,15,.97
 .msbar .bc{padding:3px 10px;border-radius:14px;font-size:11px;background:var(--s2);border:1px solid var(--bd);color:var(--tx);cursor:pointer}
 .msbar .bc:hover{border-color:var(--r);color:var(--r)}
 .msbar .be{font-size:11.5px;color:var(--mt)}
-@media(max-width:700px){#sv{padding:22px 16px}.mstg{grid-template-columns:1fr 1fr}.mscg{grid-template-columns:1fr}}
-@media(max-width:560px){.mstg{grid-template-columns:1fr}.msct{flex-direction:column}}
+@media(max-width:700px){#sv{padding:22px 16px}.mstg{grid-template-columns:1fr 1fr}.mscg{grid-template-columns:1fr}
+  /* static, not sticky: a 92px sticky bar eats too much of a short viewport */
+  .msbar{position:static;margin-top:20px}}
+@media(max-width:560px){
+  /* the 3rd tab overflows the 56px nav — shed the progress readout, keep labels on one line */
+  nav .nr{display:none}.nt button{white-space:nowrap}
+  .mskey{padding:11px 13px;gap:8px}.mskey .km{min-width:0}
+  .msc{padding:13px 14px}.msbar{padding:10px 12px}}
 
 </style>
 </head>
